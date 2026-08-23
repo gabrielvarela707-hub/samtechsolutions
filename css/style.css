@@ -1850,3 +1850,11 @@ body {
 
     line-height: 1.6;
 }
+.vertical-card {
+    scroll-margin-top: 110px;
+}
+.vertical-card:target {
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+
+    outline-offset: -2px;
+}
