@@ -2594,3 +2594,339 @@ body {
 /* =========================================================
    FIM - PÁGINA SERVIÇOS
 ========================================================= */
+
+
+
+
+
+
+
+
+/* =========================================================
+   PÁGINA — VERTICAIS
+   ========================================================= */
+
+
+/* =========================================================
+   HERO — VERTICAIS
+   ========================================================= */
+
+.verticals-hero {
+    position: relative;
+
+    min-height: 480px;
+
+    display: flex;
+    align-items: center;
+
+    background-image:
+        url("../assets/home/verticais-home.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+}
+
+
+.verticals-hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8, 17, 28, 0.92) 0%,
+            rgba(8, 17, 28, 0.72) 45%,
+            rgba(8, 17, 28, 0.25) 100%
+        );
+}
+
+
+.verticals-hero-container {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    padding: 90px 40px;
+}
+
+
+.verticals-label {
+    display: inline-block;
+
+    margin-bottom: 20px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+.verticals-hero h1 {
+    max-width: 720px;
+
+    margin: 0 0 25px;
+
+    color: #ffffff;
+
+    font-size: clamp(40px, 5vw, 64px);
+
+    font-weight: 600;
+
+    line-height: 1.05;
+
+    letter-spacing: -1.5px;
+}
+
+
+.verticals-hero h1 span {
+    display: block;
+
+    color: #d7e1e9;
+}
+
+
+.verticals-hero p {
+    max-width: 600px;
+
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.78);
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+/* =========================================================
+   INTRODUÇÃO
+   ========================================================= */
+
+.verticals-intro {
+    padding: 100px 0 70px;
+
+    background-color: #ffffff;
+}
+
+
+.verticals-container {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    padding: 0 40px;
+}
+
+
+.verticals-label-dark {
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    color: #6b7885;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+}
+
+
+.verticals-intro h2 {
+    max-width: 760px;
+
+    margin: 0 0 22px;
+
+    color: #121e2d;
+
+    font-size: clamp(32px, 4vw, 48px);
+
+    font-weight: 600;
+
+    line-height: 1.12;
+
+    letter-spacing: -1px;
+}
+
+
+.verticals-intro h2 span {
+    color: #52677b;
+}
+
+
+.verticals-intro p {
+    max-width: 720px;
+
+    margin: 0;
+
+    color: #687684;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+/* =========================================================
+   LISTA DE VERTICAIS
+   ========================================================= */
+
+.verticals-list {
+    padding: 30px 0 110px;
+
+    background-color: #ffffff;
+}
+
+
+.verticals-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.vertical-card {
+    position: relative;
+
+    min-height: 420px;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: flex-end;
+
+    background-color: #121e2d;
+
+    text-decoration: none;
+
+    border-radius: 2px;
+
+    box-shadow:
+        0 10px 35px rgba(18, 30, 45, 0.08);
+}
+
+
+.vertical-card img {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.7s ease;
+}
+
+
+.vertical-card:hover img {
+    transform: scale(1.06);
+}
+
+
+/* =========================================================
+   OVERLAY
+   ========================================================= */
+
+.vertical-card-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(8, 17, 28, 0.95) 0%,
+            rgba(8, 17, 28, 0.65) 45%,
+            rgba(8, 17, 28, 0.05) 100%
+        );
+
+    transition:
+        background 0.4s ease;
+}
+
+
+.vertical-card:hover .vertical-card-overlay {
+    background:
+        linear-gradient(
+            to top,
+            rgba(8, 17, 28, 0.97) 0%,
+            rgba(8, 17, 28, 0.72) 55%,
+            rgba(8, 17, 28, 0.15) 100%
+        );
+}
+
+
+/* =========================================================
+   CONTEÚDO
+   ========================================================= */
+
+.vertical-card-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    padding: 32px;
+}
+
+
+.vertical-number {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.vertical-card h3 {
+    margin: 0 0 12px;
+
+    color: #ffffff;
+
+    font-size: 25px;
+
+    font-weight: 600;
+
+    line-height: 1.2;
+}
+
+
+.vertical-card p {
+    max-width: 390px;
+
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.78);
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
