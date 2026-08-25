@@ -1,1 +1,280 @@
 
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #121e2d;
+}
+
+
+/* =========================================================
+   CABEÇALHO
+   ========================================================= */
+
+#site-control {
+    width: 100%;
+    background-color: #121e2d;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* =========================================================
+   CONTAINER PRINCIPAL
+   ========================================================= */
+
+.site-control__inner {
+    width: 100%;
+    max-width: 1400px;
+    min-height: 80px;
+
+    margin: 0 auto;
+    padding: 0 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    text-decoration: none;
+}
+
+.logo img {
+    display: block;
+
+    width: auto;
+    height: 52px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   MENU PRINCIPAL
+   ========================================================= */
+
+.site-control__inline-links {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+
+    gap: 32px;
+}
+
+
+.nav-menu li {
+    position: relative;
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+.nav-menu li a {
+    display: inline-block;
+
+    padding: 8px 0;
+
+    color: #b0bec5;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    border-bottom: 2px solid transparent;
+
+    transition:
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+.nav-menu li a:hover {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   ITEM ATIVO
+   ========================================================= */
+
+.nav-menu li.active a {
+    color: #ffffff;
+
+    border-bottom-color: #ffffff;
+}
+
+
+/* =========================================================
+   ÁREA DIREITA
+   ========================================================= */
+
+.nav-right-side {
+    display: flex;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   BOTÃO DE BUSCA
+   ========================================================= */
+
+.nav-search {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    transition: opacity 0.3s ease;
+}
+
+
+.nav-search:hover {
+    opacity: 0.7;
+}
+
+
+/* =========================================================
+   ÍCONE DE LUPA
+   ========================================================= */
+
+.nav-search svg {
+    width: 22px;
+    height: 22px;
+
+    fill: none;
+
+    stroke: currentColor;
+    stroke-width: 1.8;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .site-control__inner {
+        padding: 0 25px;
+        gap: 25px;
+    }
+
+    .nav-menu {
+        gap: 20px;
+    }
+
+    .nav-menu li a {
+        font-size: 13px;
+    }
+
+    .logo img {
+        height: 46px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLETS / MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .site-control__inner {
+        min-height: 70px;
+
+        padding: 0 20px;
+
+        gap: 20px;
+    }
+
+    .logo img {
+        height: 42px;
+    }
+
+    .site-control__inline-links {
+        display: none;
+    }
+
+    .nav-right-side {
+        margin-left: auto;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE PEQUENO
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .site-control__inner {
+        padding: 0 15px;
+    }
+
+    .logo img {
+        height: 38px;
+    }
+
+    .nav-search svg {
+        width: 20px;
+        height: 20px;
+    }
+
+}
