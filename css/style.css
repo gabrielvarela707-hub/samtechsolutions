@@ -211,7 +211,7 @@ body {
 .contact-hero {
     width: 100%;
 
-    padding: 100px 0;
+    padding: 80px 0 75px;
 
     background-color: #121e2d;
     color: #ffffff;
@@ -236,7 +236,7 @@ body {
 }
 
 .contact-hero h1 {
-    max-width: 850px;
+    max-width: 760px;
 
     margin-bottom: 24px;
 
@@ -266,7 +266,7 @@ body {
 .contact-content {
     width: 100%;
 
-    padding: 100px 0;
+    padding: 80px 0;
 
     background-color: #ffffff;
 }
