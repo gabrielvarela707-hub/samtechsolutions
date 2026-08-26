@@ -1,0 +1,179 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================================
+   PROJETOS
+   ========================================= */
+
+.projetos {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+    padding: 80px 40px;
+}
+
+
+/* =========================================
+   TÍTULO DA PÁGINA
+   ========================================= */
+
+.projetos-header {
+    margin-bottom: 50px;
+}
+
+.projetos-header h1 {
+    margin-bottom: 15px;
+
+    color: #121e2d;
+
+    font-size: 42px;
+}
+
+.projetos-header p {
+    max-width: 650px;
+
+    color: #5f6b76;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   LISTA DE PROJETOS
+   ========================================= */
+
+.projetos-lista {
+    width: 100%;
+}
+
+
+/* =========================================
+   CARD DO PROJETO
+   ========================================= */
+
+.projeto {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e1e5e8;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(18, 30, 45, 0.08);
+}
+
+
+/* =========================================
+   IMAGEM DO PROJETO
+   ========================================= */
+
+.projeto > img {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+
+    object-fit: cover;
+}
+
+
+/* =========================================
+   CONTEÚDO DO CARD
+   ========================================= */
+
+.projeto-conteudo {
+    padding: 45px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* =========================================
+   DATA
+   ========================================= */
+
+.projeto-data {
+    margin-bottom: 15px;
+
+    color: #7f8c98;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   TÍTULO DO PROJETO
+   ========================================= */
+
+.projeto-conteudo h2 {
+    margin-bottom: 18px;
+
+    color: #121e2d;
+
+    font-size: 28px;
+}
+
+
+/* =========================================
+   DESCRIÇÃO
+   ========================================= */
+
+.projeto-conteudo p {
+    margin-bottom: 25px;
+
+    color: #5f6b76;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   BOTÃO LINKEDIN
+   ========================================= */
+
+.projeto-conteudo a {
+    padding: 12px 20px;
+
+    background-color: #121e2d;
+
+    border-radius: 6px;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.projeto-conteudo a:hover {
+    background-color: #1e2d40;
+
+    transform: translateY(-2px);
+}
