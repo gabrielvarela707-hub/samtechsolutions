@@ -317,3 +317,420 @@ body {
 .membro-info p:last-child {
     margin-bottom: 0;
 }
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   CONHEÇA NOSSAS VERTICAIS
+   ========================================================= */
+
+.verticals {
+    width: 100%;
+
+    padding: 90px 0 100px;
+
+    background-color: #ffffff;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.verticals-container {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 0 40px;
+}
+
+
+/* =========================================================
+   CABEÇALHO DA SEÇÃO
+   ========================================================= */
+
+.verticals-header {
+    margin-bottom: 50px;
+
+    text-align: center;
+}
+
+
+.verticals-header h2 {
+    margin: 0 0 12px;
+
+    color: #121e2d;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 36px;
+    font-weight: 600;
+
+    line-height: 1.2;
+}
+
+
+.verticals-header p {
+    margin: 0 auto;
+
+    max-width: 650px;
+
+    color: #697684;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   GRID
+   ========================================================= */
+
+.verticals-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(7, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.vertical-card {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+
+    overflow: hidden;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e3e7eb;
+
+    border-radius: 3px;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* =========================================================
+   HOVER DO CARD
+   ========================================================= */
+
+.vertical-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #cbd3da;
+
+    box-shadow:
+        0 12px 30px rgba(18, 30, 45, 0.12);
+}
+
+
+/* =========================================================
+   IMAGEM
+   ========================================================= */
+
+.vertical-image {
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    overflow: hidden;
+
+    background-color: #e9edf1;
+}
+
+
+.vertical-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.5s ease;
+}
+
+
+/* =========================================================
+   ZOOM DA IMAGEM
+   ========================================================= */
+
+.vertical-card:hover .vertical-image img {
+    transform: scale(1.06);
+}
+
+
+/* =========================================================
+   GRADIENTE SOBRE A IMAGEM
+   ========================================================= */
+
+.vertical-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(18, 30, 45, 0) 50%,
+            rgba(18, 30, 45, 0.25) 100%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTEÚDO DO CARD
+   ========================================================= */
+
+.vertical-content {
+    min-height: 90px;
+
+    padding: 16px 14px 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+
+/* =========================================================
+   NOME DA VERTICAL
+   ========================================================= */
+
+.vertical-content h3 {
+    margin: 0;
+
+    color: #121e2d;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    line-height: 1.35;
+}
+
+
+/* =========================================================
+   LINK
+   ========================================================= */
+
+.vertical-content span {
+    margin-top: 10px;
+
+    color: #697684;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    transition:
+        color 0.3s ease;
+}
+
+
+.vertical-card:hover .vertical-content span {
+    color: #121e2d;
+}
+
+
+/* =========================================================
+   BOTÃO
+   ========================================================= */
+
+.verticals-footer {
+    margin-top: 45px;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.verticals-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 46px;
+
+    padding: 0 26px;
+
+    background-color: #121e2d;
+
+    color: #ffffff;
+
+    border: 1px solid #121e2d;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+
+.verticals-button:hover {
+    background-color: transparent;
+
+    color: #121e2d;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+    .verticals-grid {
+        grid-template-columns:
+            repeat(4, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================================
+   TABLET PEQUENO
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .verticals {
+        padding: 70px 0 80px;
+    }
+
+
+    .verticals-container {
+        padding: 0 25px;
+    }
+
+
+    .verticals-header h2 {
+        font-size: 30px;
+    }
+
+
+    .verticals-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 18px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 500px) {
+
+    .verticals {
+        padding: 60px 0 70px;
+    }
+
+
+    .verticals-container {
+        padding: 0 18px;
+    }
+
+
+    .verticals-header {
+        margin-bottom: 35px;
+    }
+
+
+    .verticals-header h2 {
+        font-size: 27px;
+    }
+
+
+    .verticals-header p {
+        font-size: 14px;
+    }
+
+
+    .verticals-grid {
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+    }
+
+
+    .vertical-card {
+        display: grid;
+
+        grid-template-columns: 120px 1fr;
+
+        min-height: 120px;
+    }
+
+
+    .vertical-image {
+        aspect-ratio: 1 / 1;
+
+        height: 120px;
+    }
+
+
+    .vertical-content {
+        min-height: 120px;
+
+        padding: 18px;
+    }
+
+
+    .vertical-content h3 {
+        font-size: 15px;
+    }
+
+
+    .verticals-footer {
+        margin-top: 35px;
+    }
+
+}
