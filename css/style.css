@@ -87,7 +87,7 @@ body {
    IMAGEM DO PROJETO
    ========================================= */
 
-.projeto > img {
+.projeto>img {
     width: 100%;
     height: 100%;
     min-height: 350px;
@@ -176,4 +176,393 @@ body {
     background-color: #1e2d40;
 
     transform: translateY(-2px);
+}
+
+
+
+/* =========================================================
+   PÁGINA - CONTATO
+   =========================================================
+
+/* =========================================================
+   CONTAINER GERAL
+   ========================================================= */
+
+.contact-page {
+    width: 100%;
+    background-color: #ffffff;
+    color: #121e2d;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+/* =========================================================
+   HERO DA PÁGINA
+   ========================================================= */
+
+.contact-hero {
+    width: 100%;
+
+    padding: 100px 0;
+
+    background-color: #121e2d;
+    color: #ffffff;
+}
+
+.contact-hero .contact-container {
+    max-width: 1400px;
+}
+
+.contact-eyebrow {
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    color: #35a9e0;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.contact-hero h1 {
+    max-width: 850px;
+
+    margin-bottom: 24px;
+
+    color: #ffffff;
+
+    font-size: clamp(42px, 5vw, 68px);
+    font-weight: 600;
+
+    line-height: 1.05;
+}
+
+.contact-hero p {
+    max-width: 760px;
+
+    color: #d8e0e7;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   ÁREA PRINCIPAL
+   INFORMAÇÕES + FORMULÁRIO
+   ========================================================= */
+
+.contact-content {
+    width: 100%;
+
+    padding: 100px 0;
+
+    background-color: #ffffff;
+}
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+    gap: 70px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   COLUNA DE INFORMAÇÕES
+   ========================================================= */
+
+.contact-info {
+    min-width: 0;
+}
+
+.contact-info h2 {
+    max-width: 560px;
+
+    margin-bottom: 20px;
+
+    color: #121e2d;
+
+    font-size: 40px;
+    font-weight: 600;
+
+    line-height: 1.15;
+}
+
+.contact-intro {
+    max-width: 540px;
+
+    margin-bottom: 42px;
+
+    color: #5f6b76;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   LISTA DE CONTATO
+   ========================================================= */
+
+.contact-info-list {
+    width: 100%;
+}
+
+.contact-info-item {
+    padding: 24px 0;
+
+    border-top: 1px solid #e1e5e8;
+}
+
+.contact-info-item:last-child {
+    border-bottom: 1px solid #e1e5e8;
+}
+
+.contact-info-item h3 {
+    margin-bottom: 8px;
+
+    color: #121e2d;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.contact-info-item p,
+.contact-info-item a {
+    color: #5f6b76;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.contact-info-item a {
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.contact-info-item a:hover {
+    color: #35a9e0;
+}
+
+
+/* =========================================================
+   CARD DO FORMULÁRIO
+   ========================================================= */
+
+.contact-form-card {
+    min-width: 0;
+
+    padding: 45px;
+
+    background-color: #f5f7f9;
+
+    border: 1px solid #e1e5e8;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(18, 30, 45, 0.06);
+}
+
+.contact-form-card h2 {
+    margin-bottom: 12px;
+
+    color: #121e2d;
+
+    font-size: 34px;
+    font-weight: 600;
+
+    line-height: 1.2;
+}
+
+.contact-form-card>p {
+    margin-bottom: 32px;
+
+    color: #5f6b76;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   FORMULÁRIO
+   ========================================================= */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+
+    gap: 8px;
+}
+
+.form-group label {
+    color: #121e2d;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   CAMPOS DO FORMULÁRIO
+   ========================================================= */
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 15px 16px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #d7dde3;
+    border-radius: 6px;
+
+    color: #121e2d;
+
+    font-family: inherit;
+    font-size: 15px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #8a95a0;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #35a9e0;
+
+    box-shadow: 0 0 0 3px rgba(53, 169, 224, 0.12);
+}
+
+.form-group textarea {
+    min-height: 150px;
+
+    resize: vertical;
+}
+
+
+/* =========================================================
+   BOTÃO DO FORMULÁRIO
+   ========================================================= */
+
+.contact-submit {
+    align-self: flex-start;
+
+    padding: 14px 24px;
+
+    background-color: #121e2d;
+
+    border: none;
+    border-radius: 6px;
+
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.contact-submit:hover {
+    background-color: #1e2d40;
+
+    transform: translateY(-2px);
+}
+
+.contact-submit:focus-visible {
+    outline: 3px solid rgba(53, 169, 224, 0.35);
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   LOCALIZAÇÃO
+   ========================================================= */
+
+.contact-location {
+    padding: 70px 0 80px;
+}
+
+.contact-location-header {
+    margin-bottom: 35px;
+}
+
+.contact-location-header h2 {
+    max-width: 700px;
+
+    color: #121e2d;
+
+    font-size: 38px;
+    font-weight: 600;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   MAPA
+   ========================================================= */
+
+.contact-map {
+    width: 100%;
+
+    overflow: hidden;
+
+    background-color: #e9edf1;
+
+    border: 1px solid #e1e5e8;
+    border-radius: 12px;
+}
+
+.contact-map iframe {
+    display: block;
+    width: 100%;
+    height: 340px;
+    border: 0;
 }
