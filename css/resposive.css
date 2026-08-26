@@ -1,1 +1,50 @@
+/* =========================================
+   RESPONSIVIDADE PÁGINA PROJETOS
+   ========================================= */
 
+@media (max-width: 900px) {
+
+    .projetos {
+        padding: 60px 25px;
+    }
+
+    .projeto {
+        grid-template-columns: 1fr;
+    }
+
+    .projeto > img {
+        height: 300px;
+        min-height: auto;
+    }
+
+    .projeto-conteudo {
+        padding: 35px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .projetos {
+        padding: 50px 20px;
+    }
+
+    .projetos-header h1 {
+        font-size: 32px;
+    }
+
+    .projeto > img {
+        height: 220px;
+    }
+
+    .projeto-conteudo {
+        padding: 25px;
+    }
+
+    .projeto-conteudo h2 {
+        font-size: 23px;
+    }
+}
+/* =========================================
+   FIM RESPONSIVIDADE PÁGINA PROJETOS
+   ========================================= */
