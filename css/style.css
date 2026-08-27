@@ -632,17 +632,23 @@ body {
     margin-bottom: 0;
 }
 
+/* IMAGENS DA SEÇÃO COM HOVER */
 .quem-somos > img {
     width: 100%;
-    max-width: 500px;
-    height: 500px;
+    max-width: 100%;
+    height: 100%;
+    min-height: 350px;
     object-fit: cover;
     display: block;
     border: 1px solid #e1e5e8;
     border-radius: 12px;
     box-shadow: 0 5px 20px rgba(18, 30, 45, 0.08);
-    align-self: center;
-    justify-self: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quem-somos > img:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 12px 30px rgba(18, 30, 45, 0.15);
 }
 
 
@@ -675,6 +681,12 @@ body {
     border: 1px solid #e1e5e8;
     border-radius: 12px;
     box-shadow: 0 5px 20px rgba(18, 30, 45, 0.08);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.membro-card:hover {
+    border-color: #35a9e0;
+    box-shadow: 0 10px 30px rgba(18, 30, 45, 0.12);
 }
 
 .membro-card:last-child {
@@ -693,6 +705,12 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* Efeito zoom suave na foto do membro */
+.membro-card:hover .membro-foto img {
+    transform: scale(1.05);
 }
 
 .membro-info {
@@ -726,10 +744,6 @@ body {
 .membro-info p:last-child {
     margin-bottom: 0;
 }
-
-
-
-
 
 
 
@@ -1142,354 +1156,411 @@ body {
 }
 
 /* =========================================================
-   PÁGINA SERVIÇOS
-========================================================= */
-
-/* HERO */
-.services-hero {
-    background: #102033;
-    padding: 90px 8%;
-    color: #ffffff;
-}
-
-.services-hero-content {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.services-hero .eyebrow {
-    color: #19b9ee;
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-}
-
-.services-hero h1 {
-    max-width: 850px;
-    font-size: clamp(42px, 5vw, 68px);
-    line-height: 1.05;
-    margin: 0 0 25px;
-    font-weight: 700;
-}
-
-.services-hero p {
-    max-width: 850px;
-    font-size: 18px;
-    line-height: 1.7;
-    color: #d6dee7;
-}
+   PÁGINA — SOLUÇÕES
+   ========================================================= */
 
 
 /* =========================================================
-   INTRODUÇÃO
-========================================================= */
+   BANNER
+   ========================================================= */
 
-.services-intro {
-    padding: 90px 8% 60px;
-    background: #ffffff;
-}
+.solucoes-banner {
+    width: 100%;
+    min-height: 420px;
 
-.services-intro-content {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.services-intro .eyebrow {
-    color: #159fd3;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
-}
-
-.services-intro h2 {
-    max-width: 850px;
-    font-size: clamp(32px, 4vw, 48px);
-    line-height: 1.15;
-    color: #102033;
-    margin-bottom: 20px;
-}
-
-.services-intro p {
-    max-width: 900px;
-    color: #5d6875;
-    font-size: 17px;
-    line-height: 1.7;
-}
-
-
-/* =========================================================
-   SERVIÇOS
-========================================================= */
-
-.services-section {
-    padding: 70px 8% 100px;
-    background: #f5f7f9;
-}
-
-.services-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.services-section .eyebrow {
-    color: #159fd3;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 12px;
-}
-
-.services-section h2 {
-    color: #102033;
-    font-size: clamp(30px, 4vw, 44px);
-    margin-bottom: 40px;
-}
-
-
-/* BOTÕES DAS CATEGORIAS */
-
-.services-tabs {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 40px;
+    align-items: center;
+
+    padding: 80px 40px;
+
+    background-image:
+        linear-gradient(
+            rgba(18, 30, 45, 0.72),
+            rgba(18, 30, 45, 0.72)
+        ),
+        url("../assets/imagens_solucoes/banner-cidade.jpg");
+
+    background-size: cover;
+    background-position: center;
 }
 
-.services-tabs button {
-    border: 1px solid #d7dde4;
-    background: #ffffff;
-    color: #102033;
-    padding: 13px 18px;
-    border-radius: 8px;
+.solucoes-banner-conteudo {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+
+.solucoes-banner-conteudo span {
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: #b0bec5;
+
     font-size: 14px;
     font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s ease;
+    letter-spacing: 2px;
 }
 
-.services-tabs button:hover,
-.services-tabs button.active {
-    background: #159fd3;
-    border-color: #159fd3;
+.solucoes-banner-conteudo h1 {
+    max-width: 750px;
+
+    margin-bottom: 20px;
+
     color: #ffffff;
-    transform: translateY(-2px);
+
+    font-size: 52px;
+    line-height: 1.15;
+}
+
+.solucoes-banner-conteudo p {
+    max-width: 650px;
+
+    color: #ffffff;
+
+    font-size: 18px;
+    line-height: 1.7;
 }
 
 
-/* CARD PRINCIPAL */
+/* =========================================================
+   CONTEÚDO DA PÁGINA
+   ========================================================= */
 
-.service-feature {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: #ffffff;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 15px 45px rgba(16, 32, 51, 0.08);
-}
-
-.service-feature-image {
-    min-height: 500px;
-}
-
-.service-feature-image img {
+.solucoes {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 90px 40px;
+}
+
+
+/* =========================================================
+   CABEÇALHO DA SEÇÃO
+   ========================================================= */
+
+.solucoes-header {
+    max-width: 750px;
+
+    margin-bottom: 55px;
+}
+
+.solucoes-subtitulo {
     display: block;
-}
 
-.service-feature-content {
-    padding: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+    margin-bottom: 12px;
 
-.service-number {
-    color: #159fd3;
+    color: #35a9e0;
+
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 2px;
-    margin-bottom: 15px;
 }
 
-.service-feature-content h3 {
-    color: #102033;
-    font-size: 32px;
-    line-height: 1.2;
+.solucoes-header h1 {
     margin-bottom: 20px;
+
+    color: #121e2d;
+
+    font-size: 40px;
+    line-height: 1.2;
 }
 
-.service-feature-content > p {
-    color: #606b78;
+.solucoes-header p {
+    color: #5f6b76;
+
+    font-size: 17px;
     line-height: 1.7;
-    margin-bottom: 25px;
-}
-
-.service-feature-content strong {
-    color: #102033;
-}
-
-.service-feature-content ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.service-feature-content li {
-    position: relative;
-    padding: 10px 0 10px 25px;
-    color: #596572;
-    line-height: 1.5;
-}
-
-.service-feature-content li::before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    color: #159fd3;
-    font-weight: 700;
 }
 
 
 /* =========================================================
-   SEGMENTOS
-========================================================= */
+   GRID DE SOLUÇÕES
+   ========================================================= */
 
-.services-segments {
-    padding: 100px 8%;
-    background: #ffffff;
-}
-
-.services-segments-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.services-segments .eyebrow {
-    color: #159fd3;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 12px;
-    font-weight: 700;
-    margin-bottom: 12px;
-}
-
-.services-segments h2 {
-    max-width: 750px;
-    color: #102033;
-    font-size: clamp(32px, 4vw, 46px);
-    line-height: 1.15;
-    margin-bottom: 45px;
-}
-
-.segments-grid {
+.solucoes-lista {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 18px;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
 }
 
-.segment-card {
-    min-height: 260px;
-    border-radius: 15px;
-    overflow: hidden;
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.solucao {
     position: relative;
-    background: #102033;
+
+    min-height: 500px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    background-color: #ffffff;
+
+    box-shadow: 0 5px 20px rgba(18, 30, 45, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
-.segment-card img {
+
+/* Efeito ao passar o mouse */
+
+.solucao:hover {
+    transform: scale(1.03);
+
+    box-shadow: 0 12px 30px rgba(18, 30, 45, 0.15);
+}
+
+
+/* =========================================================
+   PARTE VISÍVEL DO CARD
+   ========================================================= */
+
+.solucao-card {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    position: absolute;
-    inset: 0;
-    transition: transform 0.4s ease;
-}
 
-.segment-card::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        to top,
-        rgba(8, 24, 40, 0.9),
-        rgba(8, 24, 40, 0.08)
-    );
-}
-
-.segment-card:hover img {
-    transform: scale(1.06);
-}
-
-.segment-card-content {
-    position: absolute;
-    z-index: 2;
-    left: 25px;
-    right: 25px;
-    bottom: 25px;
-    color: #ffffff;
-}
-
-.segment-card-content span {
-    display: block;
-    color: #31c3f3;
-    font-size: 12px;
-    letter-spacing: 2px;
-    margin-bottom: 8px;
-}
-
-.segment-card-content h3 {
-    font-size: 21px;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 
 /* =========================================================
-   CTA FINAL
-========================================================= */
+   IMAGEM
+   ========================================================= */
 
-.services-cta {
-    background: #102033;
-    padding: 80px 8%;
-    text-align: center;
-    color: #ffffff;
+.solucao-card img {
+    width: 100%;
+    height: 230px;
+
+    display: block;
+
+    object-fit: cover;
 }
 
-.services-cta-content {
-    max-width: 800px;
-    margin: 0 auto;
+
+/* =========================================================
+   RESUMO
+   ========================================================= */
+
+.solucao-resumo {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 30px;
 }
 
-.services-cta h2 {
-    font-size: clamp(32px, 4vw, 48px);
-    margin-bottom: 18px;
-}
 
-.services-cta p {
-    color: #d5dde6;
-    font-size: 17px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-}
+/* =========================================================
+   NÚMERO
+   ========================================================= */
 
-.services-cta a {
-    display: inline-block;
-    padding: 14px 28px;
-    border-radius: 8px;
-    background: #19b9ee;
-    color: #ffffff;
-    text-decoration: none;
+.solucao-numero {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #35a9e0;
+
+    font-size: 13px;
     font-weight: 700;
-    transition: 0.3s ease;
+    letter-spacing: 1px;
 }
 
-.services-cta a:hover {
-    transform: translateY(-3px);
-    background: #0da7dc;
+
+/* =========================================================
+   TÍTULO DO CARD
+   ========================================================= */
+
+.solucao-resumo h2 {
+    margin-bottom: 15px;
+
+    color: #121e2d;
+
+    font-size: 24px;
+    line-height: 1.3;
 }
 
+
+/* =========================================================
+   DESCRIÇÃO RESUMIDA
+   ========================================================= */
+
+.solucao-resumo p {
+    margin-bottom: 25px;
+
+    color: #5f6b76;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   BOTÃO SAIBA MAIS
+   ========================================================= */
+
+.solucao-botao {
+    margin-top: auto;
+
+    padding: 11px 18px;
+
+    border: 0;
+    border-radius: 5px;
+
+    background-color: #121e2d;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.solucao-botao:hover {
+    background-color: #35a9e0;
+
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   ÁREA DE DETALHES
+   ========================================================= */
+
+/*
+   Inicialmente os detalhes ficam escondidos.
+   O JavaScript poderá adicionar a classe
+   .ativo ao .solucao para mostrar essa área.
+*/
+
+.solucao-detalhes {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: 0;
+    height: 100%;
+
+    overflow: hidden;
+
+    padding: 0;
+
+    background-color: #ffffff;
+
+    opacity: 0;
+
+    transition:
+        width 0.4s ease,
+        opacity 0.3s ease,
+        padding 0.4s ease;
+}
+
+
+/* =========================================================
+   CARD ABERTO
+   ========================================================= */
+
+.solucao.ativo {
+    grid-column: span 2;
+}
+
+.solucao.ativo .solucao-detalhes {
+    width: 50%;
+
+    padding: 40px;
+
+    opacity: 1;
+}
+
+
+/* =========================================================
+   BOTÃO FECHAR
+   ========================================================= */
+
+.solucao-fechar {
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
+    width: 35px;
+    height: 35px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #121e2d;
+
+    color: #ffffff;
+
+    font-size: 22px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+.solucao-fechar:hover {
+    background-color: #35a9e0;
+}
+
+
+/* =========================================================
+   CONTEÚDO DOS DETALHES
+   ========================================================= */
+
+.solucao-detalhes h2 {
+    max-width: 400px;
+
+    margin-bottom: 20px;
+
+    color: #121e2d;
+
+    font-size: 28px;
+    line-height: 1.3;
+}
+
+.solucao-detalhes p {
+    margin-bottom: 25px;
+
+    color: #5f6b76;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.solucao-detalhes ul {
+    padding-left: 20px;
+
+    color: #5f6b76;
+}
+
+.solucao-detalhes li {
+    margin-bottom: 10px;
+
+    font-size: 15px;
+}
+/* =========================================================
+   FIM DA PÁGINA — SOLUÇÕES
+   ========================================================= */
