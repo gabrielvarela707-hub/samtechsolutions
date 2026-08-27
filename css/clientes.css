@@ -1,0 +1,395 @@
+/* =========================================================
+   CLIENTES
+   ========================================================= */
+
+.clients {
+    width: 100%;
+
+    padding: 100px 0;
+
+    background-color: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.clients-container {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 0 40px;
+}
+
+
+/* =========================================================
+   CABEÇALHO
+   ========================================================= */
+
+.clients-header {
+    max-width: 700px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+
+.clients-label {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: #6b7885;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+}
+
+
+.clients-header h2 {
+    margin: 0 0 16px;
+
+    color: #121e2d;
+
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 600;
+
+    line-height: 1.2;
+}
+
+
+.clients-header p {
+    margin: 0;
+
+    color: #687684;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   CARROSSEL
+   ========================================================= */
+
+.clients-carousel {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   VIEWPORT
+   ========================================================= */
+
+.clients-viewport {
+    width: 100%;
+
+    overflow: hidden;
+
+    padding: 10px 0;
+}
+
+
+/* =========================================================
+   TRACK
+   ========================================================= */
+
+.clients-track {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    width: max-content;
+
+    transition:
+        transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.client-logo {
+    width: 190px;
+    height: 110px;
+
+    flex: 0 0 190px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 22px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #edf0f2;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.client-logo:hover {
+    border-color: #d9dee3;
+
+    box-shadow:
+        0 8px 25px rgba(18, 30, 45, 0.08);
+
+    transform: translateY(-3px);
+}
+
+
+.client-logo img {
+    display: block;
+
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 55px;
+
+    object-fit: contain;
+
+    filter: grayscale(100%);
+
+    opacity: 0.65;
+
+    transition:
+        filter 0.3s ease,
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.client-logo:hover img {
+    filter: grayscale(0);
+
+    opacity: 1;
+
+    transform: scale(1.04);
+}
+
+
+/* =========================================================
+   SETAS
+   ========================================================= */
+
+.clients-arrow {
+    position: relative;
+
+    z-index: 5;
+
+    width: 44px;
+    height: 44px;
+
+    flex: 0 0 44px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    color: #121e2d;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dfe4e8;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.clients-arrow span {
+    font-size: 28px;
+
+    font-weight: 300;
+
+    line-height: 1;
+}
+
+
+.clients-arrow:hover {
+    color: #ffffff;
+
+    background-color: #121e2d;
+
+    border-color: #121e2d;
+
+    transform: scale(1.05);
+}
+
+
+.clients-arrow:active {
+    transform: scale(0.95);
+}
+
+
+.clients-arrow-prev {
+    margin-right: 20px;
+}
+
+
+.clients-arrow-next {
+    margin-left: 20px;
+}
+
+
+/* =========================================================
+   PROGRESSO
+   ========================================================= */
+
+.clients-progress {
+    width: 100%;
+
+    max-width: 300px;
+
+    height: 2px;
+
+    margin: 35px auto 0;
+
+    background-color: #e8ecef;
+
+    overflow: hidden;
+}
+
+
+.clients-progress-line {
+    display: block;
+
+    width: 25%;
+
+    height: 100%;
+
+    background-color: #121e2d;
+
+    transition:
+        transform 0.6s ease;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .clients {
+        padding: 80px 0;
+    }
+
+
+    .clients-container {
+        padding: 0 25px;
+    }
+
+
+    .client-logo {
+        width: 170px;
+        height: 100px;
+
+        flex-basis: 170px;
+    }
+
+
+    .clients-track {
+        gap: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .clients {
+        padding: 70px 0;
+    }
+
+
+    .clients-container {
+        padding: 0 18px;
+    }
+
+
+    .clients-header {
+        margin-bottom: 35px;
+    }
+
+
+    .clients-header h2 {
+        font-size: 28px;
+    }
+
+
+    .clients-header p {
+        font-size: 14px;
+    }
+
+
+    .clients-arrow {
+        width: 38px;
+        height: 38px;
+
+        flex-basis: 38px;
+    }
+
+
+    .clients-arrow-prev {
+        margin-right: 10px;
+    }
+
+
+    .clients-arrow-next {
+        margin-left: 10px;
+    }
+
+
+    .client-logo {
+        width: 150px;
+        height: 90px;
+
+        flex-basis: 150px;
+
+        padding: 18px;
+    }
+
+
+    .client-logo img {
+        max-height: 45px;
+    }
+
+}
