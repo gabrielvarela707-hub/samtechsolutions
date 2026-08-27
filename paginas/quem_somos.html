@@ -3,20 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quem Somos</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Quem Somos - Samtech Solutions</title>
 </head>
+
 <body>
     
-    <header>
-        <h1>Quem Somos</h1>
-        <p>Conheça nossa história e valores.</p>
+    <!-- CABEÇALHO -->
+    <header id="site-control">
+        <div class="site-control__inner">
+
+            <!-- LOGO -->
+            <a class="logo" href="../index.html" aria-label="Samtech Solutions - Página inicial">
+                <img src="../assets/samtechsolutionsbr_logotransparente.png" alt="Samtech Solutions">
+            </a>
+
+            <!-- MENU PRINCIPAL -->
+            <nav class="site-control__inline-links" aria-label="Navegação principal">
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="solucoes.html">Soluções</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="verticais.html">Verticais</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li class="active"><a href="quem_somos.html">Sobre Nós</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <!-- BUSCA -->
+            <div class="nav-right-side">
+                <a class="nav-search" href="buscar.html" aria-label="Pesquisar">
+                    <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <line x1="19" y1="19" x2="27" y2="27"></line>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
     </header>
 
+    <!-- CONTEÚDO PRINCIPAL -->
     <main>
-
+        <!-- HISTÓRIA E VALORES -->
         <section class="quem-somos">
 
-            <article class="sobre">
+            <div class="sobre">
                 <h1>Nossa História</h1>
                 <p>
                     Oriunda de um grupo de investimentos de tecnologia e distribuição criado durante os anos 2010, a Samtech USA nasce com o objetivo de revolucionar o mercado de automação, segurança e proteção, priorizando a inovação, sustentabilidade e uma gestão eficiente de projetos. Nosso principal foco é expandir nossa presença globalmente, fornecendo aos nossos clientes em todo o mundo toda a nossa experiência e conhecimento para otimizar projetos, implementar soluções eletrônicas e oferecer serviços especializados. 
@@ -26,29 +61,149 @@
                 <p>
                     Concentrando-se no mercado latino-americano, no último trimestre de 2023 a Samtech adquiriu a empresa Sorusys que há oito anos é uma referência quando se trata de comissionamento e programação de sistemas de alarme e detecção de incêndio. Com isso, ampliamos ainda mais nossa presença e assumimos uma carteira de clientes nas indústrias e portos do Brasil.
                 </p>
-            </article>
+            </div>
 
-            <img src="sobre.jpg" alt="Sobre a Samtech">
+            <img src="../assets/sobre.jpg" alt="Sobre a Samtech">
 
-            <img src="missao.jpg" alt="Missão e valores da Samtech">
+            <img src="../assets/missao.jpg" alt="Missão e valores da Samtech">
 
-            <article class="Missão e Valores">
+            <div class="missao-valores">
                 <h2>Missão</h2>
-
                 <p>
                     A Samtech tem como objetivo ser uma das principais empresas no campo da automação, proteção e eficiência energética. Nossa missão é alcançar isso através da inovação, soluções sustentáveis e serviços especializados de manutenção preventiva, corretiva e preditiva, enquanto nos comprometemos firmemente com a segurança. Valorizamos a proximidade com nossos clientes, construindo relacionamentos baseados na confiança e no desejo de alcançar um futuro mais sustentável, seguro e eficiente.
                 </p>
 
                 <h2>Valores</h2>
-
                 <p>
                     Visualizamos um futuro onde a Samtech é sinônimo de confiança, proximidade e excelência em serviços, promovendo um mundo mais sustentável e seguro.
                 </p>
-            </article>
+            </div>
 
         </section>
 
+        <!-- SEÇÃO DO TIME -->
+        <section class="nosso-time">
+            <h2>Conheça o Time da Samtech Brasil</h2>
+
+            <!-- CARD 1: AILTON -->
+            <div class="membro-card">
+                <div class="membro-foto">
+                    <img src="../assets/ailton_pereira.webp" alt="Ailton Pereira">
+                </div>
+                <div class="membro-info">
+                    <h3>Ailton Pereira</h3>
+                    <span class="cargo">CEO</span>
+                    <p>A trajetória de Ailton Pereira é marcada por mais de 30 anos de dedicação à tecnologia e gestão, atualmente como CEO da Samtech Brasil.</p>
+                    <p>Conhecido por seu espírito comunicativo e capacidade de motivar equipes, Ailton é um líder proativo em qualidade, desenvolvimento de processos e automação industrial. Formado em Tecnologia de Projetos Mecânicos e com pós-graduação em Administração Industrial pela Universidade de São Paulo, ele une uma sólida formação acadêmica a uma experiência prática extensa.</p>
+                    <p>Líder respeitado, Ailton é incessante na busca por inovação e excelência, sempre pronto para superar desafios e inspirar equipes a alcançar metas ambiciosas.</p>
+                </div>
+            </div>
+
+            <!-- CARD 2: EDSON COSTA -->
+            <div class="membro-card">
+                <div class="membro-foto">
+                    <img src="../assets/edson_costa.svg" alt="Edson Costa">
+                </div>
+                <div class="membro-info">
+                    <h3>Edson Costa</h3>
+                    <span class="cargo">Diretor Comercial</span>
+                    <p>Edson Costa combina mais de 14 anos de experiência em eficiência, gestão de serviços e segurança com uma visão estratégica para o crescimento sustentável da empresa.</p>
+                    <p>Liderando equipes e desenvolvendo estratégias de vendas, ele é fundamental na expansão da base de clientes e no aumento da receita. Certificado em ITIL V.3, suas competências abrangem CRM e gerenciamento de TI, sustentadas por um forte instinto empreendedor focado nas necessidades dos clientes.</p>
+                    <p>Além disso, Edson valoriza a educação contínua, atuando como palestrante e mentor, e é reconhecido por sua capacidade de adaptar-se e liderar no setor de tecnologia e inovação.</p>
+                </div>
+            </div>
+
+            <!-- CARD 3: EDSON MEIRA -->
+            <div class="membro-card">
+                <div class="membro-foto">
+                    <img src="../assets/edson_meira.png" alt="Edson Meira">
+                </div>
+                <div class="membro-info">
+                    <h3>Edson Meira</h3>
+                    <span class="cargo">Gerente de Projetos</span>
+                    <p>Edson Meira atua no setor de automação de sistemas com ampla experiência no gerenciamento e implementação de projetos de grande porte.</p>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- RODAPÉ -->
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <!-- MARCA -->
+            <div class="footer-brand">
+                <a href="../index.html" class="footer-logo" aria-label="Samtech Solutions - Página inicial">
+                    <img src="../assets/samtechsolutionsbr_logotransparente.png" alt="Samtech Solutions">
+                </a>
+
+                <p class="footer-description">
+                    Tecnologia, inovação e soluções digitais para transformar desafios em oportunidades.
+                </p>
+
+                <div class="footer-social">
+                    <a href="#" aria-label="LinkedIn" title="LinkedIn">in</a>
+                    <a href="#" aria-label="Instagram" title="Instagram">ig</a>
+                    <a href="#" aria-label="GitHub" title="GitHub">gh</a>
+                </div>
+            </div>
+
+            <!-- NAVEGAÇÃO -->
+            <div class="footer-column">
+                <h3>Navegação</h3>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="solucoes.html">Soluções</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="verticais.html">Verticais</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="quem_somos.html">Sobre Nós</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <!-- SOLUÇÕES -->
+            <div class="footer-column">
+                <h3>Soluções</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Desenvolvimento de Software</a></li>
+                    <li><a href="#">Soluções em Nuvem</a></li>
+                    <li><a href="#">Automação</a></li>
+                    <li><a href="#">Dados e Inteligência</a></li>
+                    <li><a href="#">Infraestrutura de TI</a></li>
+                </ul>
+            </div>
+
+            <!-- CONTATO -->
+            <div class="footer-column">
+                <h3>Fale Conosco</h3>
+                <div class="footer-contact">
+                    <div class="footer-contact-item">
+                        <span>Entre em contato conosco</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>São Paulo, SP<br>Brasil</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+            <p class="footer-copyright">
+                © 2026 Samtech Solutions. Todos os direitos reservados.
+            </p>
+
+            <div class="footer-legal">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+            </div>
+        </div>
+
+    </footer>
 
 </body>
 </html>
