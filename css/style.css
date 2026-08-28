@@ -3,185 +3,173 @@
    ========================================= */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
-
 
 /* =========================================
    PROJETOS
    ========================================= */
 
 .projetos {
-    width: 100%;
-    max-width: 1400px;
+  width: 100%;
+  max-width: 1400px;
 
-    margin: 0 auto;
-    padding: 80px 40px;
+  margin: 0 auto;
+  padding: 80px 40px;
 }
-
 
 /* =========================================
    TÍTULO DA PÁGINA
    ========================================= */
 
 .projetos-header {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .projetos-header h1 {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 
-    color: #121e2d;
+  color: #121e2d;
 
-    font-size: 42px;
+  font-size: 42px;
 }
 
 .projetos-header p {
-    max-width: 650px;
+  max-width: 650px;
 
-    color: #5f6b76;
+  color: #5f6b76;
 
-    font-size: 16px;
-    line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.7;
 }
-
 
 /* =========================================
    LISTA DE PROJETOS
    ========================================= */
 
 .projetos-lista {
-    width: 100%;
+  width: 100%;
 }
-
 
 /* =========================================
    CARD DO PROJETO
    ========================================= */
 
 .projeto {
-    display: grid;
+  display: grid;
 
-    grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 
-    width: 100%;
+  width: 100%;
 
-    overflow: hidden;
+  overflow: hidden;
 
-    background-color: #ffffff;
+  background-color: #ffffff;
 
-    border: 1px solid #e1e5e8;
-    border-radius: 12px;
+  border: 1px solid #e1e5e8;
+  border-radius: 12px;
 
-    box-shadow: 0 5px 20px rgba(18, 30, 45, 0.08);
+  box-shadow: 0 5px 20px rgba(18, 30, 45, 0.08);
 }
-
 
 /* =========================================
    IMAGEM DO PROJETO
    ========================================= */
 
-.projeto>img {
-    width: 100%;
-    height: 100%;
-    min-height: 350px;
+.projeto > img {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
 
-    object-fit: cover;
+  object-fit: cover;
 }
-
 
 /* =========================================
    CONTEÚDO DO CARD
    ========================================= */
 
 .projeto-conteudo {
-    padding: 45px;
+  padding: 45px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
-
 
 /* =========================================
    DATA
    ========================================= */
 
 .projeto-data {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 
-    color: #7f8c98;
+  color: #7f8c98;
 
-    font-size: 13px;
-    font-weight: 600;
+  font-size: 13px;
+  font-weight: 600;
 }
-
 
 /* =========================================
    TÍTULO DO PROJETO
    ========================================= */
 
 .projeto-conteudo h2 {
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 
-    color: #121e2d;
+  color: #121e2d;
 
-    font-size: 28px;
+  font-size: 28px;
 }
-
 
 /* =========================================
    DESCRIÇÃO
    ========================================= */
 
 .projeto-conteudo p {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 
-    color: #5f6b76;
+  color: #5f6b76;
 
-    font-size: 15px;
-    line-height: 1.7;
+  font-size: 15px;
+  line-height: 1.7;
 }
-
 
 /* =========================================
    BOTÃO LINKEDIN
    ========================================= */
 
 .projeto-conteudo a {
-    padding: 12px 20px;
+  padding: 12px 20px;
 
-    background-color: #121e2d;
+  background-color: #121e2d;
 
-    border-radius: 6px;
+  border-radius: 6px;
 
-    color: #ffffff;
+  color: #ffffff;
 
-    font-size: 14px;
-    font-weight: 600;
+  font-size: 14px;
+  font-weight: 600;
 
-    text-decoration: none;
+  text-decoration: none;
 
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .projeto-conteudo a:hover {
-    background-color: #1e2d40;
+  background-color: #1e2d40;
 
-    transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 /* =========================================
    FIM PROJETOS
    ========================================= */
-
-
 
 /* =========================================================
    PÁGINA - CONTATO
@@ -192,74 +180,72 @@ body {
    ========================================================= */
 
 .contact-page {
-    width: 100%;
-    background-color: #ffffff;
-    color: #121e2d;
+  width: 100%;
+  background-color: #ffffff;
+  color: #121e2d;
 }
 
 .contact-container {
-    width: 100%;
-    max-width: 1400px;
+  width: 100%;
+  max-width: 1400px;
 
-    margin: 0 auto;
-    padding-left: 40px;
-    padding-right: 40px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
-
 
 /* =========================================================
    HERO DA PÁGINA
    ========================================================= */
 
 .contact-hero {
-    width: 100%;
+  width: 100%;
 
-    padding: 80px 0 75px;
+  padding: 80px 0 75px;
 
-    background-color: #121e2d;
-    color: #ffffff;
+  background-color: #121e2d;
+  color: #ffffff;
 }
 
 .contact-hero .contact-container {
-    max-width: 1400px;
+  max-width: 1400px;
 }
 
 .contact-eyebrow {
-    display: inline-block;
+  display: inline-block;
 
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 
-    color: #35a9e0;
+  color: #35a9e0;
 
-    font-size: 13px;
-    font-weight: 600;
+  font-size: 13px;
+  font-weight: 600;
 
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
 .contact-hero h1 {
-    max-width: 760px;
+  max-width: 760px;
 
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 
-    color: #ffffff;
+  color: #ffffff;
 
-    font-size: clamp(42px, 5vw, 68px);
-    font-weight: 600;
+  font-size: clamp(42px, 5vw, 68px);
+  font-weight: 600;
 
-    line-height: 1.05;
+  line-height: 1.05;
 }
 
 .contact-hero p {
-    max-width: 760px;
+  max-width: 760px;
 
-    color: #d8e0e7;
+  color: #d8e0e7;
 
-    font-size: 18px;
-    line-height: 1.7;
+  font-size: 18px;
+  line-height: 1.7;
 }
-
 
 /* =========================================================
    ÁREA PRINCIPAL
@@ -267,176 +253,171 @@ body {
    ========================================================= */
 
 .contact-content {
-    width: 100%;
+  width: 100%;
 
-    padding: 80px 0;
+  padding: 80px 0;
 
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .contact-grid {
-    display: grid;
+  display: grid;
 
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
 
-    gap: 70px;
+  gap: 70px;
 
-    align-items: start;
+  align-items: start;
 }
-
 
 /* =========================================================
    COLUNA DE INFORMAÇÕES
    ========================================================= */
 
 .contact-info {
-    min-width: 0;
+  min-width: 0;
 }
 
 .contact-info h2 {
-    max-width: 560px;
+  max-width: 560px;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    color: #121e2d;
+  color: #121e2d;
 
-    font-size: 40px;
-    font-weight: 600;
+  font-size: 40px;
+  font-weight: 600;
 
-    line-height: 1.15;
+  line-height: 1.15;
 }
 
 .contact-intro {
-    max-width: 540px;
+  max-width: 540px;
 
-    margin-bottom: 42px;
+  margin-bottom: 42px;
 
-    color: #5f6b76;
+  color: #5f6b76;
 
-    font-size: 16px;
-    line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.7;
 }
-
 
 /* =========================================================
    LISTA DE CONTATO
    ========================================================= */
 
 .contact-info-list {
-    width: 100%;
+  width: 100%;
 }
 
 .contact-info-item {
-    padding: 24px 0;
+  padding: 24px 0;
 
-    border-top: 1px solid #e1e5e8;
+  border-top: 1px solid #e1e5e8;
 }
 
 .contact-info-item:last-child {
-    border-bottom: 1px solid #e1e5e8;
+  border-bottom: 1px solid #e1e5e8;
 }
 
 .contact-info-item h3 {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 
-    color: #121e2d;
+  color: #121e2d;
 
-    font-size: 16px;
-    font-weight: 600;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .contact-info-item p,
 .contact-info-item a {
-    color: #5f6b76;
+  color: #5f6b76;
 
-    font-size: 15px;
-    line-height: 1.7;
+  font-size: 15px;
+  line-height: 1.7;
 }
 
 .contact-info-item a {
-    text-decoration: none;
+  text-decoration: none;
 
-    transition: color 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 .contact-info-item a:hover {
-    color: #35a9e0;
+  color: #35a9e0;
 }
-
 
 /* =========================================================
    CARD DO FORMULÁRIO
    ========================================================= */
 
 .contact-form-card {
-    min-width: 0;
+  min-width: 0;
 
-    padding: 45px;
+  padding: 45px;
 
-    background-color: #f5f7f9;
+  background-color: #f5f7f9;
 
-    border: 1px solid #e1e5e8;
-    border-radius: 12px;
+  border: 1px solid #e1e5e8;
+  border-radius: 12px;
 
-    box-shadow: 0 5px 20px rgba(18, 30, 45, 0.06);
+  box-shadow: 0 5px 20px rgba(18, 30, 45, 0.06);
 }
 
 .contact-form-card h2 {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 
-    color: #121e2d;
+  color: #121e2d;
 
-    font-size: 34px;
-    font-weight: 600;
+  font-size: 34px;
+  font-weight: 600;
 
-    line-height: 1.2;
+  line-height: 1.2;
 }
 
-.contact-form-card>p {
-    margin-bottom: 32px;
+.contact-form-card > p {
+  margin-bottom: 32px;
 
-    color: #5f6b76;
+  color: #5f6b76;
 
-    font-size: 15px;
-    line-height: 1.7;
+  font-size: 15px;
+  line-height: 1.7;
 }
-
 
 /* =========================================================
    FORMULÁRIO
    ========================================================= */
 
 .contact-form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    gap: 20px;
+  gap: 20px;
 }
 
 .form-row {
-    display: grid;
+  display: grid;
 
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
 
-    gap: 18px;
+  gap: 18px;
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    min-width: 0;
+  min-width: 0;
 
-    gap: 8px;
+  gap: 8px;
 }
 
 .form-group label {
-    color: #121e2d;
+  color: #121e2d;
 
-    font-size: 14px;
-    font-weight: 600;
+  font-size: 14px;
+  font-weight: 600;
 }
-
 
 /* =========================================================
    CAMPOS DO FORMULÁRIO
@@ -444,130 +425,127 @@ body {
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
+  width: 100%;
 
-    padding: 15px 16px;
+  padding: 15px 16px;
 
-    background-color: #ffffff;
+  background-color: #ffffff;
 
-    border: 1px solid #d7dde3;
-    border-radius: 6px;
+  border: 1px solid #d7dde3;
+  border-radius: 6px;
 
-    color: #121e2d;
+  color: #121e2d;
 
-    font-family: inherit;
-    font-size: 15px;
+  font-family: inherit;
+  font-size: 15px;
 
-    outline: none;
+  outline: none;
 
-    transition:
-        border-color 0.2s ease,
-        box-shadow 0.2s ease,
-        background-color 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: #8a95a0;
+  color: #8a95a0;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: #35a9e0;
+  border-color: #35a9e0;
 
-    box-shadow: 0 0 0 3px rgba(53, 169, 224, 0.12);
+  box-shadow: 0 0 0 3px rgba(53, 169, 224, 0.12);
 }
 
 .form-group textarea {
-    min-height: 150px;
+  min-height: 150px;
 
-    resize: vertical;
+  resize: vertical;
 }
-
 
 /* =========================================================
    BOTÃO DO FORMULÁRIO
    ========================================================= */
 
 .contact-submit {
-    align-self: flex-start;
+  align-self: flex-start;
 
-    padding: 14px 24px;
+  padding: 14px 24px;
 
-    background-color: #121e2d;
+  background-color: #121e2d;
 
-    border: none;
-    border-radius: 6px;
+  border: none;
+  border-radius: 6px;
 
-    color: #ffffff;
+  color: #ffffff;
 
-    font-family: inherit;
-    font-size: 14px;
-    font-weight: 600;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition:
-        background-color 0.2s ease,
-        transform 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .contact-submit:hover {
-    background-color: #1e2d40;
+  background-color: #1e2d40;
 
-    transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 .contact-submit:focus-visible {
-    outline: 3px solid rgba(53, 169, 224, 0.35);
-    outline-offset: 3px;
+  outline: 3px solid rgba(53, 169, 224, 0.35);
+  outline-offset: 3px;
 }
-
 
 /* =========================================================
    LOCALIZAÇÃO
    ========================================================= */
 
 .contact-location {
-    padding: 70px 0 80px;
+  padding: 70px 0 80px;
 }
 
 .contact-location-header {
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 .contact-location-header h2 {
-    max-width: 700px;
+  max-width: 700px;
 
-    color: #121e2d;
+  color: #121e2d;
 
-    font-size: 38px;
-    font-weight: 600;
+  font-size: 38px;
+  font-weight: 600;
 
-    line-height: 1.2;
+  line-height: 1.2;
 }
-
 
 /* =========================================================
    MAPA
    ========================================================= */
 
 .contact-map {
-    width: 100%;
+  width: 100%;
 
-    overflow: hidden;
+  overflow: hidden;
 
-    background-color: #e9edf1;
+  background-color: #e9edf1;
 
-    border: 1px solid #e1e5e8;
-    border-radius: 12px;
+  border: 1px solid #e1e5e8;
+  border-radius: 12px;
 }
 
 .contact-map iframe {
-    display: block;
-    width: 100%;
-    height: 340px;
-    border: 0;
+  display: block;
+  width: 100%;
+  height: 340px;
+  border: 0;
 }
 
 /* =========================================================
@@ -575,473 +553,452 @@ body {
    ========================================================= */
 
 .quem-somos {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 80px 40px 40px 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 40px 40px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
 
-.sobre, 
+.sobre,
 .missao-valores {
-    padding: 45px;
-    background-color: #ffffff;
-    border: 1px solid #e1e5e8;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(18, 30, 45, 0.08);
+  padding: 45px;
+  background-color: #ffffff;
+  border: 1px solid #e1e5e8;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(18, 30, 45, 0.08);
 }
 
 .sobre {
-    background-color: #f5f7f9;
+  background-color: #f5f7f9;
 }
 
 .sobre h1,
 .missao-valores h2 {
-    font-size: 34px;
-    font-weight: 600;
-    color: #121e2d;
-    margin-top: 0;
-    margin-bottom: 18px;
-    line-height: 1.2;
+  font-size: 34px;
+  font-weight: 600;
+  color: #121e2d;
+  margin-top: 0;
+  margin-bottom: 18px;
+  line-height: 1.2;
 }
 
 .sobre h2 {
-    font-size: 22px;
-    font-weight: 600;
-    margin-top: 32px;
-    margin-bottom: 12px;
-    color: #121e2d;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 32px;
+  margin-bottom: 12px;
+  color: #121e2d;
 }
 
 .missao-valores h2:nth-of-type(2) {
-    margin-top: 32px;
+  margin-top: 32px;
 }
 
-.sobre p, 
+.sobre p,
 .missao-valores p {
-    font-size: 15px;
-    line-height: 1.7;
-    color: #5f6b76;
-    margin-bottom: 16px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #5f6b76;
+  margin-bottom: 16px;
 }
 
 .sobre p:last-child,
 .missao-valores p:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 /* IMAGENS DA SEÇÃO COM HOVER */
 .quem-somos > img {
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-    min-height: 350px;
-    object-fit: cover;
-    display: block;
-    border: 1px solid #e1e5e8;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(18, 30, 45, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  min-height: 350px;
+  object-fit: cover;
+  display: block;
+  border: 1px solid #e1e5e8;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(18, 30, 45, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .quem-somos > img:hover {
-    transform: translateY(-5px) scale(1.01);
-    box-shadow: 0 12px 30px rgba(18, 30, 45, 0.15);
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 12px 30px rgba(18, 30, 45, 0.15);
 }
-
 
 /* =========================================================
    SEÇÃO CONHEÇA O TIME
    ========================================================= */
 
 .nosso-time {
-    width: 100%;
-    max-width: 1400px;
-    margin: 40px auto 80px auto;
-    padding: 0 40px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 40px auto 80px auto;
+  padding: 0 40px;
 }
 
 .nosso-time > h2 {
-    text-align: center;
-    font-size: 38px;
-    font-weight: 600;
-    color: #121e2d;
-    margin-bottom: 50px;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 600;
+  color: #121e2d;
+  margin-bottom: 50px;
 }
 
 .membro-card {
-    display: flex;
-    align-items: flex-start;
-    gap: 45px;
-    padding: 45px;
-    margin-bottom: 30px;
-    background-color: #ffffff;
-    border: 1px solid #e1e5e8;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(18, 30, 45, 0.08);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: flex-start;
+  gap: 45px;
+  padding: 45px;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  border: 1px solid #e1e5e8;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(18, 30, 45, 0.08);
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .membro-card:hover {
-    border-color: #35a9e0;
-    box-shadow: 0 10px 30px rgba(18, 30, 45, 0.12);
+  border-color: #35a9e0;
+  box-shadow: 0 10px 30px rgba(18, 30, 45, 0.12);
 }
 
 .membro-card:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .membro-foto {
-    flex-shrink: 0;
-    width: 260px;
-    height: 320px;
-    border-radius: 8px;
-    overflow: hidden;
+  flex-shrink: 0;
+  width: 260px;
+  height: 320px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .membro-foto img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.4s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
 }
 
 /* Efeito zoom suave na foto do membro */
 .membro-card:hover .membro-foto img {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .membro-info {
-    flex: 1;
+  flex: 1;
 }
 
 .membro-info h3 {
-    font-size: 28px;
-    font-weight: 600;
-    color: #121e2d;
-    margin: 0 0 6px 0;
+  font-size: 28px;
+  font-weight: 600;
+  color: #121e2d;
+  margin: 0 0 6px 0;
 }
 
 .membro-info .cargo {
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 600;
-    color: #35a9e0;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #35a9e0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .membro-info p {
-    font-size: 15px;
-    line-height: 1.7;
-    color: #5f6b76;
-    margin-bottom: 16px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #5f6b76;
+  margin-bottom: 16px;
 }
 
 .membro-info p:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
-
-
-
-
-
-
-
 
 /* =========================================================
    PÁGINA — SOLUÇÕES
    ========================================================= */
-
 
 /* =========================================================
    BANNER
    ========================================================= */
 
 .solucoes-banner {
-    width: 100%;
-    min-height: 420px;
+  width: 100%;
+  min-height: 420px;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    padding: 80px 40px;
+  padding: 80px 40px;
 
-    background-image:
-        linear-gradient(
-            rgba(18, 30, 45, 0.72),
-            rgba(18, 30, 45, 0.72)
-        ),
-        url("../assets/solucoes/banner-cidade.jpg");
+  background-image:
+    linear-gradient(rgba(18, 30, 45, 0.72), rgba(18, 30, 45, 0.72)),
+    url("../assets/solucoes/banner-cidade.jpg");
 
-    background-size: cover;
-    background-position: center;
+  background-size: cover;
+  background-position: center;
 }
 
 .solucoes-banner-conteudo {
-    width: 100%;
-    max-width: 1400px;
+  width: 100%;
+  max-width: 1400px;
 
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .solucoes-banner-conteudo span {
-    display: block;
+  display: block;
 
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 
-    color: #b0bec5;
+  color: #b0bec5;
 
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .solucoes-banner-conteudo h1 {
-    max-width: 750px;
+  max-width: 750px;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    color: #ffffff;
+  color: #ffffff;
 
-    font-size: 52px;
-    line-height: 1.15;
+  font-size: 52px;
+  line-height: 1.15;
 }
 
 .solucoes-banner-conteudo p {
-    max-width: 650px;
+  max-width: 650px;
 
-    color: #ffffff;
+  color: #ffffff;
 
-    font-size: 18px;
-    line-height: 1.7;
+  font-size: 18px;
+  line-height: 1.7;
 }
-
 
 /* =========================================================
    CONTEÚDO DA PÁGINA
    ========================================================= */
 
 .solucoes {
-    width: 100%;
-    max-width: 1400px;
+  width: 100%;
+  max-width: 1400px;
 
-    margin: 0 auto;
+  margin: 0 auto;
 
-    padding: 90px 40px;
+  padding: 90px 40px;
 }
-
 
 /* =========================================================
    CABEÇALHO DA SEÇÃO
    ========================================================= */
 
 .solucoes-header {
-    max-width: 750px;
+  max-width: 750px;
 
-    margin-bottom: 55px;
+  margin-bottom: 55px;
 }
 
 .solucoes-subtitulo {
-    display: block;
+  display: block;
 
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 
-    color: #35a9e0;
+  color: #35a9e0;
 
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 .solucoes-header h1 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    color: #121e2d;
+  color: #121e2d;
 
-    font-size: 40px;
-    line-height: 1.2;
+  font-size: 40px;
+  line-height: 1.2;
 }
 
 .solucoes-header p {
-    color: #5f6b76;
+  color: #5f6b76;
 
-    font-size: 17px;
-    line-height: 1.7;
+  font-size: 17px;
+  line-height: 1.7;
 }
-
 
 /* =========================================================
    GRID DE SOLUÇÕES
    ========================================================= */
 
 .solucoes-lista {
-    display: grid;
+  display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
-    gap: 25px;
+  gap: 25px;
 }
-
 
 /* =========================================================
    CARD
    ========================================================= */
 
 .solucao {
-    position: relative;
+  position: relative;
 
-    min-height: 500px;
+  min-height: 500px;
 
-    overflow: hidden;
+  overflow: hidden;
 
-    border-radius: 12px;
+  border-radius: 12px;
 
-    background-color: #ffffff;
+  background-color: #ffffff;
 
-    box-shadow: 0 5px 20px rgba(18, 30, 45, 0.08);
+  box-shadow: 0 5px 20px rgba(18, 30, 45, 0.08);
 
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
-
 
 /* Efeito ao passar o mouse */
 
 .solucao:hover {
-    transform: scale(1.03);
+  transform: scale(1.03);
 
-    box-shadow: 0 12px 30px rgba(18, 30, 45, 0.15);
+  box-shadow: 0 12px 30px rgba(18, 30, 45, 0.15);
 }
-
 
 /* =========================================================
    PARTE VISÍVEL DO CARD
    ========================================================= */
 
 .solucao-card {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-
 
 /* =========================================================
    IMAGEM
    ========================================================= */
 
 .solucao-card img {
-    width: 100%;
-    height: 230px;
+  width: 100%;
+  height: 230px;
 
-    display: block;
+  display: block;
 
-    object-fit: cover;
+  object-fit: cover;
 }
 
 .solucao.ativo .solucao-card {
-    width: 50%;
-    height: 100%;
+  width: 50%;
+  height: 100%;
 }
-
 
 /* =========================================================
    RESUMO
    ========================================================= */
 
 .solucao-resumo {
-    flex: 1;
+  flex: 1;
 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
-    padding: 30px;
+  padding: 30px;
 }
-
 
 /* =========================================================
    NÚMERO
    ========================================================= */
 
 .solucao-numero {
-    display: block;
+  display: block;
 
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 
-    color: #35a9e0;
+  color: #35a9e0;
 
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 1px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
-
 
 /* =========================================================
    TÍTULO DO CARD
    ========================================================= */
 
 .solucao-resumo h2 {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 
-    color: #121e2d;
+  color: #121e2d;
 
-    font-size: 24px;
-    line-height: 1.3;
+  font-size: 24px;
+  line-height: 1.3;
 }
-
 
 /* =========================================================
    DESCRIÇÃO RESUMIDA
    ========================================================= */
 
 .solucao-resumo p {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 
-    color: #5f6b76;
+  color: #5f6b76;
 
-    font-size: 15px;
-    line-height: 1.6;
+  font-size: 15px;
+  line-height: 1.6;
 }
-
 
 /* =========================================================
    BOTÃO SAIBA MAIS
    ========================================================= */
 
 .solucao-botao {
-    margin-top: auto;
+  margin-top: auto;
 
-    padding: 11px 18px;
+  padding: 11px 18px;
 
-    border: 0;
-    border-radius: 5px;
+  border: 0;
+  border-radius: 5px;
 
-    background-color: #121e2d;
+  background-color: #121e2d;
 
-    color: #ffffff;
+  color: #ffffff;
 
-    font-size: 14px;
-    font-weight: 600;
+  font-size: 14px;
+  font-weight: 600;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition:
-        background-color 0.3s ease,
-        transform 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .solucao-botao:hover {
-    background-color: #35a9e0;
-    transform: translateX(4px);
+  background-color: #35a9e0;
+  transform: translateX(4px);
 }
-
 
 /* =========================================================
    ÁREA DE DETALHES
@@ -1054,33 +1011,32 @@ body {
 */
 
 .solucao-detalhes {
-    position: absolute;
+  position: absolute;
 
-    top: 0;
-    right: 0;
+  top: 0;
+  right: 0;
 
-    width: 0;
-    height: 100%;
+  width: 0;
+  height: 100%;
 
-    overflow: hidden;
+  overflow: hidden;
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    padding: 40px 0;
+  padding: 40px 0;
 
-    background-color: #ffffff;
+  background-color: #ffffff;
 
-    opacity: 0;
+  opacity: 0;
 
-    transform: translateX(100%);
+  transform: translateX(100%);
 
-    transition:
-        width 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-        padding 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-        opacity 0.4s ease,
-        transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    width 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    padding 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.4s ease,
+    transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 /* Conteúdo começa escondido */
 
@@ -1088,15 +1044,14 @@ body {
 .solucao-detalhes p,
 .solucao-detalhes ul,
 .solucao-detalhes .solucao-numero {
-    opacity: 0;
+  opacity: 0;
 
-    transform: translateX(20px);
+  transform: translateX(20px);
 
-    transition:
-        opacity 0.3s ease,
-        transform 0.4s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.4s ease;
 }
-
 
 /* Conteúdo aparece quando o card abre */
 
@@ -1104,130 +1059,127 @@ body {
 .solucao.ativo .solucao-detalhes p,
 .solucao.ativo .solucao-detalhes ul,
 .solucao.ativo .solucao-detalhes .solucao-numero {
-    opacity: 1;
+  opacity: 1;
 
-    transform: translateX(0);
+  transform: translateX(0);
 
-    transition-delay: 0.25s;
+  transition-delay: 0.25s;
 }
-
 
 /* =========================================================
    CARD ABERTO
    ========================================================= */
 
 .solucao.ativo {
-    grid-column: span 2;
+  grid-column: span 2;
 
-    z-index: 2;
+  z-index: 2;
 
-    animation: entradaCard 0.45s ease;
+  animation: entradaCard 0.45s ease;
 }
 
 @keyframes entradaCard {
-    from {
-        opacity: 0.7;
-        transform: translateY(-10px);
-    }
+  from {
+    opacity: 0.7;
+    transform: translateY(-10px);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .solucao.ativo .solucao-detalhes {
-    width: 50%;
+  width: 50%;
 
-    padding: 40px;
+  padding: 40px;
 
-    opacity: 1;
+  opacity: 1;
 
-    transform: translateX(0);
+  transform: translateX(0);
 }
 
 .solucao:hover {
-    transform: scale(1.03);
+  transform: scale(1.03);
 
-    box-shadow: 0 12px 30px rgba(18, 30, 45, 0.15);
+  box-shadow: 0 12px 30px rgba(18, 30, 45, 0.15);
 }
 
 .solucao.ativo:hover {
-    transform: none;
+  transform: none;
 }
-
 
 /* =========================================================
    BOTÃO FECHAR
    ========================================================= */
 
 .solucao-fechar {
-    position: absolute;
+  position: absolute;
 
-    top: 20px;
-    right: 20px;
+  top: 20px;
+  right: 20px;
 
-    width: 35px;
-    height: 35px;
+  width: 35px;
+  height: 35px;
 
-    border: none;
-    border-radius: 50%;
+  border: none;
+  border-radius: 50%;
 
-    background-color: #121e2d;
+  background-color: #121e2d;
 
-    color: #ffffff;
+  color: #ffffff;
 
-    font-size: 22px;
-    line-height: 1;
+  font-size: 22px;
+  line-height: 1;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition:
-        background-color 0.3s ease,
-        transform 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .solucao-fechar:hover {
-    background-color: #35a9e0;
+  background-color: #35a9e0;
 
-    transform: rotate(90deg);
+  transform: rotate(90deg);
 }
-
 
 /* =========================================================
    CONTEÚDO DOS DETALHES
    ========================================================= */
 
 .solucao-detalhes h2 {
-    max-width: 400px;
+  max-width: 400px;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    color: #121e2d;
+  color: #121e2d;
 
-    font-size: 28px;
-    line-height: 1.3;
+  font-size: 28px;
+  line-height: 1.3;
 }
 
 .solucao-detalhes p {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 
-    color: #5f6b76;
+  color: #5f6b76;
 
-    font-size: 15px;
-    line-height: 1.7;
+  font-size: 15px;
+  line-height: 1.7;
 }
 
 .solucao-detalhes ul {
-    padding-left: 20px;
+  padding-left: 20px;
 
-    color: #5f6b76;
+  color: #5f6b76;
 }
 
 .solucao-detalhes li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 
-    font-size: 15px;
+  font-size: 15px;
 }
 /* =========================================================
    FIM DA PÁGINA — SOLUÇÕES
@@ -1242,90 +1194,89 @@ body {
 ========================================================= */
 
 .services-page {
-    background: #f6f8fa;
-    padding: 0 0 100px;
+  background: #f6f8fa;
+  padding: 0 0 100px;
 }
 
 .services-hero {
-    width: 100%;
-    min-height: 440px;
+  width: 100%;
+  min-height: 440px;
 
-    background:
-        linear-gradient(
-            90deg,
-            rgba(5, 20, 36, 0.92) 0%,
-            rgba(5, 20, 36, 0.68) 45%,
-            rgba(5, 20, 36, 0.12) 100%
-        ),
-        url("../assets/servicos/banner-servicos.png");
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 20, 36, 0.92) 0%,
+      rgba(5, 20, 36, 0.68) 45%,
+      rgba(5, 20, 36, 0.12) 100%
+    ),
+    url("../assets/servicos/banner-servicos.png");
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .services-hero-content {
-    width: 100%;
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 0 6%;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 6%;
 }
 
 .services-hero h1 {
-    margin: 0;
-    max-width: 650px;
+  margin: 0;
+  max-width: 650px;
 
-    color: #ffffff;
-    font-size: clamp(42px, 5vw, 68px);
-    line-height: 1.05;
-    font-weight: 700;
+  color: #ffffff;
+  font-size: clamp(42px, 5vw, 68px);
+  line-height: 1.05;
+  font-weight: 700;
 }
 
 .services-hero-text {
-    margin: 22px 0 0;
-    max-width: 560px;
-    color: #ffffff;
-    font-size: 20px;
-    line-height: 1.5;
-    font-weight: 400;
+  margin: 22px 0 0;
+  max-width: 560px;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
 }
-
 
 /* ÁREA PRINCIPAL */
 
 .services-container {
-    width: 100%;
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 70px 6% 0;
-    box-sizing: border-box;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 70px 6% 0;
+  box-sizing: border-box;
 }
 
 /* TÍTULO */
 .services-heading {
-    text-align: center;
-    margin-bottom: 55px;
+  text-align: center;
+  margin-bottom: 55px;
 }
 
 .services-heading span {
-    display: block;
-    color: #13aee4;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    margin-bottom: 14px;
+  display: block;
+  color: #13aee4;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
 }
 
 .services-heading h1 {
-    margin: 0;
-    color: #102033;
-    font-size: clamp(38px, 5vw, 58px);
-    line-height: 1.08;
-    font-weight: 700;
+  margin: 0;
+  color: #102033;
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.08;
+  font-weight: 700;
 }
 
 /* =========================================================
@@ -1333,58 +1284,60 @@ body {
 ========================================================= */
 
 .services-box {
-    background: #ffffff;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 18px 55px rgba(16, 32, 51, 0.09);
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 18px 55px rgba(16, 32, 51, 0.09);
 }
 
 /* ABAS */
 .services-tabs {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    border-bottom: 1px solid #e5e9ed;
-    background: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  border-bottom: 1px solid #e5e9ed;
+  background: #ffffff;
 }
 
 .service-tab {
-    position: relative;
-    min-height: 82px;
-    padding: 18px 12px;
-    border: 0;
-    background: transparent;
-    color: #65717e;
-    font-family: inherit;
-    font-size: 13px;
-    line-height: 1.4;
-    font-weight: 600;
-    text-align: center;
-    cursor: pointer;
-    transition: color 0.25s ease, background 0.25s ease;
+  position: relative;
+  min-height: 82px;
+  padding: 18px 12px;
+  border: 0;
+  background: transparent;
+  color: #65717e;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition:
+    color 0.25s ease,
+    background 0.25s ease;
 }
 
 .service-tab:not(:last-child) {
-    border-right: 1px solid #edf0f2;
+  border-right: 1px solid #edf0f2;
 }
 
 .service-tab:hover {
-    color: #102033;
-    background: #f8fafb;
+  color: #102033;
+  background: #f8fafb;
 }
 
 .service-tab.active {
-    color: #102033;
+  color: #102033;
 }
 
 .service-tab.active::after {
-    content: "";
-    position: absolute;
-    left: 18%;
-    right: 18%;
-    bottom: -1px;
-    height: 3px;
-    background: #13aee4;
-    border-radius: 3px 3px 0 0;
+  content: "";
+  position: absolute;
+  left: 18%;
+  right: 18%;
+  bottom: -1px;
+  height: 3px;
+  background: #13aee4;
+  border-radius: 3px 3px 0 0;
 }
 
 /* =========================================================
@@ -1392,366 +1345,445 @@ body {
 ========================================================= */
 
 .service-panel {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    min-height: 600px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  min-height: 600px;
 }
 
 .service-panel[hidden] {
-    display: none;
+  display: none;
 }
 
 /* IMAGEM */
 .service-image {
-    position: relative;
-    min-height: 600px;
-    overflow: hidden;
-    background: #e8edf1;
+  position: relative;
+  min-height: 600px;
+  overflow: hidden;
+  background: #e8edf1;
 }
 
 .service-image img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 /* TEXTO */
 .service-content {
-    padding: 55px 55px 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  padding: 55px 55px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .service-number {
-    display: block;
-    color: #13aee4;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    margin-bottom: 13px;
+  display: block;
+  color: #13aee4;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 13px;
 }
 
 .service-content h2 {
-    margin: 0 0 22px;
-    color: #102033;
-    font-size: clamp(28px, 3vw, 39px);
-    line-height: 1.15;
-    font-weight: 700;
+  margin: 0 0 22px;
+  color: #102033;
+  font-size: clamp(28px, 3vw, 39px);
+  line-height: 1.15;
+  font-weight: 700;
 }
 
 .service-content > p {
-    margin: 0 0 22px;
-    color: #5f6b76;
-    font-size: 15px;
-    line-height: 1.75;
+  margin: 0 0 22px;
+  color: #5f6b76;
+  font-size: 15px;
+  line-height: 1.75;
 }
 
 /* ITENS COM CHECK */
 .service-detail {
-    position: relative;
-    padding-left: 29px;
-    margin-top: 13px;
+  position: relative;
+  padding-left: 29px;
+  margin-top: 13px;
 }
 
 .service-detail::before {
-    content: "✓";
-    position: absolute;
-    top: 1px;
-    left: 0;
-    color: #13aee4;
-    font-size: 17px;
-    font-weight: 800;
+  content: "✓";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  color: #13aee4;
+  font-size: 17px;
+  font-weight: 800;
 }
 
 .service-detail p {
-    margin: 0;
-    color: #5f6b76;
-    font-size: 14px;
-    line-height: 1.65;
+  margin: 0;
+  color: #5f6b76;
+  font-size: 14px;
+  line-height: 1.65;
 }
 
 .service-detail strong {
-    color: #102033;
-    font-weight: 700;
+  color: #102033;
+  font-weight: 700;
 }
 
 /* =========================================================
    SEGMENTOS ATENDIDOS
 ========================================================= */
+/* =========================================================
+   SEGMENTOS ATENDIDOS - PÁGINA SERVIÇOS
+========================================================= */
 
 .segments {
-    padding: 95px 6%;
-    background: #ffffff;
+  width: 100%;
+  padding: 90px 0 100px;
+  background-color: #ffffff;
 }
 
 .segments-container {
-    width: 100%;
-    max-width: 1240px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
 }
 
 .segments-title {
-    margin: 0 0 55px;
-    text-align: center;
-    color: #102033;
-    font-size: clamp(30px, 4vw, 44px);
-    line-height: 1.15;
+  margin: 0 0 50px;
+  text-align: center;
+
+  color: #121e2d;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
-.segments-grid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    align-items: stretch;
+/* GRID */
+.segments .verticals-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 16px;
+  align-items: start;
 }
 
-.segment-card {
-    min-width: 0;
-    padding: 10px 14px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+/* CARD */
+.segments .vertical-card {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+  min-height: 0 !important;
+  height: fit-content !important;
+
+  align-self: start;
+
+  overflow: hidden;
+
+  background-color: #ffffff;
+
+  border: 1px solid #e3e7eb;
+  border-radius: 3px;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
 }
 
-.segment-card:not(:last-child) {
-    border-right: 1px solid #e5e9ed;
+/* HOVER */
+.segments .vertical-card:hover {
+  transform: translateY(-6px);
+
+  border-color: #cbd3da;
+
+  box-shadow: 0 12px 30px rgba(18, 30, 45, 0.12);
 }
 
-.segment-card img {
-    width: 72px;
-    height: 72px;
-    object-fit: contain;
+/* IMAGEM */
+.segments .vertical-image {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 1 / 1;
+
+  overflow: hidden;
+
+  background-color: #e9edf1;
+}
+
+.segments .vertical-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.segments .vertical-card:hover .vertical-image img {
+  transform: scale(1.06);
+}
+
+/* GRADIENTE */
+.segments .vertical-image::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(18, 30, 45, 0) 50%,
+    rgba(18, 30, 45, 0.25) 100%
+  );
+
+  pointer-events: none;
+}
+
+/* CONTEÚDO */
+/* CONTEÚDO */
+.segments .vertical-content {
+    width: 100%;
+    box-sizing: border-box;
+
+    min-height: 0 !important;
+    height: auto !important;
+
+    padding: 14px;
+
     display: block;
-    margin-bottom: 20px;
+
+    flex: 0 0 auto;
 }
 
-.segment-card h3 {
+/* NOME DO SEGMENTO */
+.segments .vertical-content h3 {
+    display: block;
+    width: 100%;
+
     margin: 0;
-    color: #102033;
+
+    color: #121e2d;
+
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    line-height: 1.4;
     font-weight: 600;
+    line-height: 1.35;
+
+    text-align: left !important;
 }
+
 
 /* =========================================================
    CONTATO / CTA
 ========================================================= */
 
 .services-contact {
-    position: relative;
-    padding: 90px 6%;
-    background:
-        linear-gradient(
-            rgba(10, 29, 47, 0.92),
-            rgba(10, 29, 47, 0.92)
-        ),
-         url("../assets/servicos/banner-cidade.jpg")
-        center / cover no-repeat;
+  position: relative;
+  padding: 90px 6%;
+  background:
+    linear-gradient(rgba(10, 29, 47, 0.92), rgba(10, 29, 47, 0.92)),
+    url("../assets/servicos/banner-cidade.jpg") center / cover no-repeat;
 }
 
 .services-contact-box {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    max-width: 1180px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: 90px;
-    align-items: center;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 90px;
+  align-items: center;
 }
 
 .services-contact-title h2 {
-    margin: 0;
-    color: #ffffff;
-    font-size: clamp(32px, 4vw, 48px);
-    line-height: 1.18;
-    font-weight: 700;
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.18;
+  font-weight: 700;
 }
 
 /* FORMULÁRIO */
 .services-form {
-    width: 100%;
+  width: 100%;
 }
 
 .services-form-group {
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 }
 
 .services-form input,
 .services-form textarea {
-    width: 100%;
-    box-sizing: border-box;
-    border: 1px solid rgba(255, 255, 255, 0.28);
-    border-radius: 7px;
-    background: rgba(255, 255, 255, 0.08);
-    padding: 15px 17px;
-    color: #ffffff;
-    font-family: inherit;
-    font-size: 14px;
-    outline: none;
-    transition: border-color 0.25s ease,
-                background 0.25s ease;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 15px 17px;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease;
 }
 
 .services-form input {
-    min-height: 50px;
+  min-height: 50px;
 }
 
 .services-form textarea {
-    min-height: 145px;
-    resize: vertical;
+  min-height: 145px;
+  resize: vertical;
 }
 
 .services-form input::placeholder,
 .services-form textarea::placeholder {
-    color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .services-form input:focus,
 .services-form textarea:focus {
-    border-color: #19b9ee;
-    background: rgba(255, 255, 255, 0.12);
+  border-color: #19b9ee;
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .services-form button {
-    min-width: 135px;
-    border: 0;
-    border-radius: 7px;
-    background: #19b9ee;
-    padding: 14px 30px;
-    color: #ffffff;
-    font-family: inherit;
-    font-size: 14px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: transform 0.25s ease,
-                background 0.25s ease;
+  min-width: 135px;
+  border: 0;
+  border-radius: 7px;
+  background: #19b9ee;
+  padding: 14px 30px;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
 }
 
 .services-form button:hover {
-    background: #0fa7d9;
-    transform: translateY(-2px);
+  background: #0fa7d9;
+  transform: translateY(-2px);
 }
 
 /* =========================================================
    FIM - PÁGINA SERVIÇOS
 ========================================================= */
 
-
-
-
-
-
-
-
 /* =========================================================
    PÁGINA — VERTICAIS
    ========================================================= */
-
 
 /* =========================================================
    HERO — VERTICAIS
    ========================================================= */
 
 .verticals-hero {
-    position: relative;
+  position: relative;
 
-    min-height: 480px;
+  min-height: 480px;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    background-image:
-        url("../assets/home/verticais-home.jpg");
+  background-image: url("../assets/home/verticais-home.jpg");
 
-    background-size: cover;
-    background-position: center;
+  background-size: cover;
+  background-position: center;
 
-    overflow: hidden;
+  overflow: hidden;
 }
-
 
 .verticals-hero-overlay {
-    position: absolute;
+  position: absolute;
 
-    inset: 0;
+  inset: 0;
 
-    background:
-        linear-gradient(
-            90deg,
-            rgba(8, 17, 28, 0.92) 0%,
-            rgba(8, 17, 28, 0.72) 45%,
-            rgba(8, 17, 28, 0.25) 100%
-        );
+  background: linear-gradient(
+    90deg,
+    rgba(8, 17, 28, 0.92) 0%,
+    rgba(8, 17, 28, 0.72) 45%,
+    rgba(8, 17, 28, 0.25) 100%
+  );
 }
-
 
 .verticals-hero-container {
-    position: relative;
+  position: relative;
 
-    z-index: 2;
+  z-index: 2;
 
-    width: 100%;
-    max-width: 1280px;
+  width: 100%;
+  max-width: 1280px;
 
-    margin: 0 auto;
+  margin: 0 auto;
 
-    padding: 90px 40px;
+  padding: 90px 40px;
 }
-
 
 .verticals-label {
-    display: inline-block;
+  display: inline-block;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    color: rgba(255, 255, 255, 0.72);
+  color: rgba(255, 255, 255, 0.72);
 
-    font-size: 11px;
-    font-weight: 700;
+  font-size: 11px;
+  font-weight: 700;
 
-    letter-spacing: 3px;
+  letter-spacing: 3px;
 }
-
 
 .verticals-hero h1 {
-    max-width: 720px;
+  max-width: 720px;
 
-    margin: 0 0 25px;
+  margin: 0 0 25px;
 
-    color: #ffffff;
+  color: #ffffff;
 
-    font-size: clamp(40px, 5vw, 64px);
+  font-size: clamp(40px, 5vw, 64px);
 
-    font-weight: 600;
+  font-weight: 600;
 
-    line-height: 1.05;
+  line-height: 1.05;
 
-    letter-spacing: -1.5px;
+  letter-spacing: -1.5px;
 }
-
 
 .verticals-hero h1 span {
-    display: block;
+  display: block;
 
-    color: #d7e1e9;
+  color: #d7e1e9;
 }
 
-
 .verticals-hero p {
-    max-width: 600px;
+  max-width: 600px;
 
-    margin: 0;
+  margin: 0;
 
-    color: rgba(255, 255, 255, 0.78);
+  color: rgba(255, 255, 255, 0.78);
 
-    font-size: 16px;
+  font-size: 16px;
 
-    line-height: 1.7;
+  line-height: 1.7;
 }
 
 /* =========================================================
@@ -1759,68 +1791,63 @@ body {
    ========================================================= */
 
 .verticals-intro {
-    padding: 100px 0 70px;
+  padding: 100px 0 70px;
 
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
-
 
 .verticals-container {
-    width: 100%;
-    max-width: 1280px;
+  width: 100%;
+  max-width: 1280px;
 
-    margin: 0 auto;
+  margin: 0 auto;
 
-    padding: 0 40px;
+  padding: 0 40px;
 }
-
 
 .verticals-label-dark {
-    display: inline-block;
+  display: inline-block;
 
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 
-    color: #6b7885;
+  color: #6b7885;
 
-    font-size: 11px;
-    font-weight: 700;
+  font-size: 11px;
+  font-weight: 700;
 
-    letter-spacing: 2.5px;
+  letter-spacing: 2.5px;
 }
-
 
 .verticals-intro h2 {
-    max-width: 760px;
+  max-width: 760px;
 
-    margin: 0 0 22px;
+  margin: 0 0 22px;
 
-    color: #121e2d;
+  color: #121e2d;
 
-    font-size: clamp(32px, 4vw, 48px);
+  font-size: clamp(32px, 4vw, 48px);
 
-    font-weight: 600;
+  font-weight: 600;
 
-    line-height: 1.12;
+  line-height: 1.12;
 
-    letter-spacing: -1px;
+  letter-spacing: -1px;
 }
-
 
 .verticals-intro h2 span {
-    color: #52677b;
+  color: #52677b;
 }
 
-
 .verticals-intro p {
-    max-width: 720px;
+  max-width: 720px;
 
-    margin: 0;
+  margin: 0;
 
-    color: #687684;
+  color: #687684;
 
-    font-size: 16px;
+  font-size: 16px;
 
-    line-height: 1.8;
+  line-height: 1.8;
 }
 
 /* =========================================================
@@ -1828,159 +1855,143 @@ body {
    ========================================================= */
 
 .verticals-list {
-    padding: 30px 0 110px;
+  padding: 30px 0 110px;
 
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
-
 
 .verticals-grid {
-    display: grid;
+  display: grid;
 
-    grid-template-columns:
-        repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
-    gap: 22px;
+  gap: 22px;
 }
-
 
 /* =========================================================
    CARD
    ========================================================= */
 
 .vertical-card {
-    position: relative;
+  position: relative;
 
-    min-height: 420px;
+  min-height: 420px;
 
-    overflow: hidden;
+  overflow: hidden;
 
-    display: flex;
-    align-items: flex-end;
+  display: flex;
+  align-items: flex-end;
 
-    background-color: #121e2d;
+  background-color: #121e2d;
 
-    text-decoration: none;
+  text-decoration: none;
 
-    border-radius: 2px;
+  border-radius: 2px;
 
-    box-shadow:
-        0 10px 35px rgba(18, 30, 45, 0.08);
+  box-shadow: 0 10px 35px rgba(18, 30, 45, 0.08);
 }
-
 
 .vertical-card img {
-    position: absolute;
+  position: absolute;
 
-    inset: 0;
+  inset: 0;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    object-fit: cover;
+  object-fit: cover;
 
-    transition:
-        transform 0.7s ease;
+  transition: transform 0.7s ease;
 }
-
 
 .vertical-card:hover img {
-    transform: scale(1.06);
+  transform: scale(1.06);
 }
-
 
 /* =========================================================
    OVERLAY
    ========================================================= */
 
 .vertical-card-overlay {
-    position: absolute;
+  position: absolute;
 
-    inset: 0;
+  inset: 0;
 
-    background:
-        linear-gradient(
-            to top,
-            rgba(8, 17, 28, 0.95) 0%,
-            rgba(8, 17, 28, 0.65) 45%,
-            rgba(8, 17, 28, 0.05) 100%
-        );
+  background: linear-gradient(
+    to top,
+    rgba(8, 17, 28, 0.95) 0%,
+    rgba(8, 17, 28, 0.65) 45%,
+    rgba(8, 17, 28, 0.05) 100%
+  );
 
-    transition:
-        background 0.4s ease;
+  transition: background 0.4s ease;
 }
-
 
 .vertical-card:hover .vertical-card-overlay {
-    background:
-        linear-gradient(
-            to top,
-            rgba(8, 17, 28, 0.97) 0%,
-            rgba(8, 17, 28, 0.72) 55%,
-            rgba(8, 17, 28, 0.15) 100%
-        );
+  background: linear-gradient(
+    to top,
+    rgba(8, 17, 28, 0.97) 0%,
+    rgba(8, 17, 28, 0.72) 55%,
+    rgba(8, 17, 28, 0.15) 100%
+  );
 }
-
 
 /* =========================================================
    CONTEÚDO
    ========================================================= */
 
 .vertical-card-content {
-    position: relative;
+  position: relative;
 
-    z-index: 2;
+  z-index: 2;
 
-    width: 100%;
+  width: 100%;
 
-    padding: 32px;
+  padding: 32px;
 }
-
 
 .vertical-number {
-    display: block;
+  display: block;
 
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 
-    color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 
-    font-size: 11px;
+  font-size: 11px;
 
-    font-weight: 700;
+  font-weight: 700;
 
-    letter-spacing: 2px;
+  letter-spacing: 2px;
 }
-
 
 .vertical-card h3 {
-    margin: 0 0 12px;
+  margin: 0 0 12px;
 
-    color: #ffffff;
+  color: #ffffff;
 
-    font-size: 25px;
+  font-size: 25px;
 
-    font-weight: 600;
+  font-weight: 600;
 
-    line-height: 1.2;
+  line-height: 1.2;
 }
-
 
 .vertical-card p {
-    max-width: 390px;
+  max-width: 390px;
 
-    margin: 0;
+  margin: 0;
 
-    color: rgba(255, 255, 255, 0.78);
+  color: rgba(255, 255, 255, 0.78);
 
-    font-size: 14px;
+  font-size: 14px;
 
-    line-height: 1.6;
+  line-height: 1.6;
 }
 .vertical-card {
-    scroll-margin-top: 110px;
+  scroll-margin-top: 110px;
 }
 .vertical-card:target {
-    outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline: 2px solid rgba(255, 255, 255, 0.5);
 
-    outline-offset: -2px;
+  outline-offset: -2px;
 }
