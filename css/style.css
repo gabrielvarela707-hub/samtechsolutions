@@ -1229,6 +1229,14 @@ body {
 
     font-size: 15px;
 }
+.solucao {
+    scroll-margin-top: 110px;
+}
+.solucao:target {
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+
+    outline-offset: -2px;
+}
 /* =========================================================
    FIM DA PÁGINA — SOLUÇÕES
    ========================================================= */
@@ -1237,16 +1245,71 @@ body {
    INÍCO - PÁGINA SERVIÇOS
 ========================================================= */
 
-/* ÁREA PRINCIPAL */
+/* =========================================================
+   BANNER / HERO - SERVIÇOS
+========================================================= */
+
 .services-page {
     background: #f6f8fa;
-    padding: 90px 6% 100px;
+    padding: 0 0 100px;
 }
+
+.services-hero {
+    width: 100%;
+    min-height: 440px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5, 20, 36, 0.92) 0%,
+            rgba(5, 20, 36, 0.68) 45%,
+            rgba(5, 20, 36, 0.12) 100%
+        ),
+        url("../assets/servicos/banner-servicos.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+}
+
+.services-hero-content {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 6%;
+}
+
+.services-hero h1 {
+    margin: 0;
+    max-width: 650px;
+
+    color: #ffffff;
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.05;
+    font-weight: 700;
+}
+
+.services-hero-text {
+    margin: 22px 0 0;
+    max-width: 560px;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+
+/* ÁREA PRINCIPAL */
 
 .services-container {
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
+    padding: 70px 6% 0;
+    box-sizing: border-box;
 }
 
 /* TÍTULO */
@@ -1493,7 +1556,7 @@ body {
             rgba(10, 29, 47, 0.92),
             rgba(10, 29, 47, 0.92)
         ),
-        url("https://cdn.shopify.com/s/files/1/0704/4418/7888/files/Untitled_15.png?v=1717004184")
+         url("../assets/servicos/banner-cidade.jpg")
         center / cover no-repeat;
 }
 
