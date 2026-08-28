@@ -748,1086 +748,6 @@ body {
 
 
 
-/* =========================================================
-   PÁGINA - HOME (VERTICAIS)
-   ========================================================= */
-
-.verticals {
-    width: 100%;
-
-    padding: 90px 0 100px;
-
-    background-color: #ffffff;
-}
-
-
-/* =========================================================
-   CONTAINER
-   ========================================================= */
-
-.verticals-container {
-    width: 100%;
-    max-width: 1400px;
-
-    margin: 0 auto;
-
-    padding: 0 40px;
-}
-
-
-/* =========================================================
-   CABEÇALHO DA SEÇÃO
-   ========================================================= */
-
-.verticals-header {
-    margin-bottom: 50px;
-
-    text-align: center;
-}
-
-
-.verticals-header h2 {
-    margin: 0 0 12px;
-
-    color: #121e2d;
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    font-size: 36px;
-    font-weight: 600;
-
-    line-height: 1.2;
-}
-
-
-.verticals-header p {
-    margin: 0 auto;
-
-    max-width: 650px;
-
-    color: #697684;
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    font-size: 15px;
-    line-height: 1.6;
-}
-
-
-/* =========================================================
-   GRID
-   ========================================================= */
-
-.verticals-grid {
-    width: 100%;
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(7, minmax(0, 1fr));
-
-    gap: 16px;
-}
-
-
-/* =========================================================
-   CARD
-   ========================================================= */
-
-.vertical-card {
-    display: flex;
-    flex-direction: column;
-
-    min-width: 0;
-
-    overflow: hidden;
-
-    background-color: #ffffff;
-
-    border: 1px solid #e3e7eb;
-
-    border-radius: 3px;
-
-    text-decoration: none;
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        border-color 0.3s ease;
-}
-
-
-/* =========================================================
-   HOVER DO CARD
-   ========================================================= */
-
-.vertical-card:hover {
-    transform: translateY(-6px);
-
-    border-color: #cbd3da;
-
-    box-shadow:
-        0 12px 30px rgba(18, 30, 45, 0.12);
-}
-
-
-/* =========================================================
-   IMAGEM
-   ========================================================= */
-
-.vertical-image {
-    position: relative;
-
-    width: 100%;
-
-    aspect-ratio: 1 / 1;
-
-    overflow: hidden;
-
-    background-color: #e9edf1;
-}
-
-
-.vertical-image img {
-    width: 100%;
-    height: 100%;
-
-    display: block;
-
-    object-fit: cover;
-
-    transition:
-        transform 0.5s ease;
-}
-
-
-/* =========================================================
-   ZOOM DA IMAGEM
-   ========================================================= */
-
-.vertical-card:hover .vertical-image img {
-    transform: scale(1.06);
-}
-
-
-/* =========================================================
-   GRADIENTE SOBRE A IMAGEM
-   ========================================================= */
-
-.vertical-image::after {
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background:
-        linear-gradient(
-            to bottom,
-            rgba(18, 30, 45, 0) 50%,
-            rgba(18, 30, 45, 0.25) 100%
-        );
-
-    pointer-events: none;
-}
-
-
-/* =========================================================
-   CONTEÚDO DO CARD
-   ========================================================= */
-
-.vertical-content {
-    min-height: 90px;
-
-    padding: 16px 14px 15px;
-
-    display: flex;
-    flex-direction: column;
-
-    justify-content: space-between;
-}
-
-
-/* =========================================================
-   NOME DA VERTICAL
-   ========================================================= */
-
-.vertical-content h3 {
-    margin: 0;
-
-    color: #121e2d;
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    font-size: 14px;
-    font-weight: 600;
-
-    line-height: 1.35;
-}
-
-
-/* =========================================================
-   LINK
-   ========================================================= */
-
-.vertical-content span {
-    margin-top: 10px;
-
-    color: #697684;
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    font-size: 11px;
-    font-weight: 600;
-
-    transition:
-        color 0.3s ease;
-}
-
-
-.vertical-card:hover .vertical-content span {
-    color: #121e2d;
-}
-
-
-/* =========================================================
-   BOTÃO
-   ========================================================= */
-
-.verticals-footer {
-    margin-top: 45px;
-
-    display: flex;
-
-    justify-content: center;
-}
-
-
-.verticals-button {
-    display: inline-flex;
-
-    align-items: center;
-    justify-content: center;
-
-    min-height: 46px;
-
-    padding: 0 26px;
-
-    background-color: #121e2d;
-
-    color: #ffffff;
-
-    border: 1px solid #121e2d;
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    font-size: 13px;
-    font-weight: 600;
-
-    text-decoration: none;
-
-    transition:
-        background-color 0.3s ease,
-        color 0.3s ease;
-}
-
-
-.verticals-button:hover {
-    background-color: transparent;
-
-    color: #121e2d;
-}
-
-
-/* =========================================================
-   TABLET
-   ========================================================= */
-
-@media (max-width: 1200px) {
-
-    .verticals-grid {
-        grid-template-columns:
-            repeat(4, minmax(0, 1fr));
-    }
-
-}
-
-
-/* =========================================================
-   TABLET PEQUENO
-   ========================================================= */
-
-@media (max-width: 800px) {
-
-    .verticals {
-        padding: 70px 0 80px;
-    }
-
-
-    .verticals-container {
-        padding: 0 25px;
-    }
-
-
-    .verticals-header h2 {
-        font-size: 30px;
-    }
-
-
-    .verticals-grid {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-
-        gap: 18px;
-    }
-
-}
-
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
-@media (max-width: 500px) {
-
-    .verticals {
-        padding: 60px 0 70px;
-    }
-
-
-    .verticals-container {
-        padding: 0 18px;
-    }
-
-
-    .verticals-header {
-        margin-bottom: 35px;
-    }
-
-
-    .verticals-header h2 {
-        font-size: 27px;
-    }
-
-
-    .verticals-header p {
-        font-size: 14px;
-    }
-
-
-    .verticals-grid {
-        grid-template-columns: 1fr;
-
-        gap: 16px;
-    }
-
-
-    .vertical-card {
-        display: grid;
-
-        grid-template-columns: 120px 1fr;
-
-        min-height: 120px;
-    }
-
-
-    .vertical-image {
-        aspect-ratio: 1 / 1;
-
-        height: 120px;
-    }
-
-
-    .vertical-content {
-        min-height: 120px;
-
-        padding: 18px;
-    }
-
-
-    .vertical-content h3 {
-        font-size: 15px;
-    }
-
-
-    .verticals-footer {
-        margin-top: 35px;
-    }
-}
-
-
-/* ========================================================= SOLUÇÕES ========================================================= */
-.solutions {
-    width: 100%;
-    padding: 110px 0;
-    background-color: #f5f7f9;
-}
-
-/* ========================================================= CONTAINER ========================================================= */
-.solutions-container {
-    width: 100%;
-    max-width: 1320px;
-    margin: 0 auto;
-    padding: 0 30px;
-}
-
-/* ========================================================= CABEÇALHO ========================================================= */
-.solutions-header {
-    max-width: 760px;
-    margin: 0 auto 55px;
-    text-align: center;
-}
-
-.solutions-label {
-    display: inline-block;
-    margin-bottom: 14px;
-    color: #6b7885;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 2.5px;
-}
-
-.solutions-header h2 {
-    margin: 0 0 18px;
-    color: #121e2d;
-    font-size: clamp(30px, 4vw, 44px);
-    font-weight: 600;
-    line-height: 1.15;
-}
-
-.solutions-header p {
-    max-width: 680px;
-    margin: 0 auto;
-    color: #687684;
-    font-size: 15px;
-    line-height: 1.7;
-}
-
-/* =========================================================
-   GRID / MOSAICO
-   ========================================================= */
-
-.solutions-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, minmax(0, 1fr));
-
-    grid-template-rows:
-        repeat(3, 220px);
-
-    grid-template-areas:
-        "bms      sdai     cftv"
-        "acesso   sdai     cftv"
-        "intrusao sdai     cftv";
-
-    gap: 18px;
-}
-
-
-/* =========================================================
-   POSICIONAMENTO DOS CARDS
-   ========================================================= */
-
-.solution-bms {
-    grid-area: bms;
-}
-
-
-.solution-access {
-    grid-area: acesso;
-}
-
-
-.solution-intrusion {
-    grid-area: intrusao;
-}
-
-
-.solution-fire {
-    grid-area: sdai;
-}
-
-
-.solution-cctv {
-    grid-area: cftv;
-}
-
-/* ============================================ CARDS ================================================ */
-.solution-card {
-    position: relative;
-    display: flex;
-    overflow: hidden;
-    background-color: #121e2d;
-    border-radius: 3px;
-    text-decoration: none;
-    box-shadow: 0 8px 25px rgba(18, 30, 45, 0.08);
-}
-
-/* ========================================================= IMAGEM ========================================================= */
-.solution-card>img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.7s ease;
-}
-
-.solution-card:hover>img {
-    transform: scale(1.06);
-}
-
-/* ========================================================= OVERLAY ========================================================= */
-.solution-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(8, 17, 28, 0.88) 0%, rgba(8, 17, 28, 0.48) 45%, rgba(8, 17, 28, 0.08) 100%);
-    transition: background 0.4s ease;
-}
-
-.solution-card:hover .solution-overlay {
-    background: linear-gradient(to top, rgba(8, 17, 28, 0.92) 0%, rgba(8, 17, 28, 0.52) 55%, rgba(8, 17, 28, 0.15) 100%);
-}
-
-/* ========================================================= CONTEÚDO ========================================================= */
-.solution-content {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    margin-top: auto;
-    padding: 28px;
-}
-
-/* ========================================================= TÍTULO ========================================================= */
-.solution-content h3 {
-    max-width: 400px;
-    margin: 0 0 7px;
-    color: #ffffff;
-    font-size: 21px;
-    font-weight: 600;
-    line-height: 1.25;
-}
-
-/* ========================================================= DESCRIÇÃO ========================================================= */
-.solution-content p {
-    max-width: 400px;
-    margin: 0;
-    color: rgba(255, 255, 255, 0.78);
-    font-size: 13px;
-    line-height: 1.5;
-}
-
-/* ========================================================= LINK ========================================================= */
-.solution-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 18px;
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: 600;
-    opacity: 0.8;
-    transition: opacity 0.3s ease, gap 0.3s ease;
-}
-
-.solution-link span {
-    font-size: 16px;
-}
-
-.solution-card:hover .solution-link {
-    gap: 12px;
-    opacity: 1;
-}
-
-/* ========================================================= CTA ========================================================= */
-.solutions-footer {
-    display: flex;
-    justify-content: center;
-    margin-top: 45px;
-}
-
-.solutions-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    min-height: 48px;
-    padding: 0 25px;
-    color: #121e2d;
-    border: 1px solid #121e2d;
-    font-size: 13px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease, gap 0.3s ease;
-}
-
-.solutions-button:hover {
-    background-color: #121e2d;
-    color: #ffffff;
-    gap: 14px;
-}
-
-/* ========================================================= TABLET ========================================================= */
-@media (max-width: 850px) {
-    .solutions {
-        padding: 80px 0;
-    }
-
-    .solutions-grid {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 260px 260px 260px;
-    }
-
-    .solution-bms {
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    .solution-access {
-        grid-column: 2;
-        grid-row: 1;
-    }
-
-    .solution-intrusion {
-        position: relative;
-        left: auto;
-        bottom: auto;
-        width: auto;
-        height: auto;
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    .solution-fire {
-        grid-column: 2;
-        grid-row: 2;
-    }
-
-    .solution-cctv {
-        grid-column: 1 / 3;
-        grid-row: 3;
-    }
-}
-
-/* ========================================================= MOBILE ========================================================= */
-@media (max-width: 550px) {
-    .solutions {
-        padding: 65px 0;
-    }
-
-    .solutions-container {
-        padding: 0 18px;
-    }
-
-    .solutions-header {
-        margin-bottom: 35px;
-    }
-
-    .solutions-header h2 {
-        font-size: 28px;
-    }
-
-    .solutions-grid {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .solution-card {
-        min-height: 300px;
-        height: 300px;
-    }
-
-    .solution-intrusion,
-    .solution-fire,
-    .solution-cctv {
-        width: 100%;
-        height: 300px;
-    }
-
-    .solution-content {
-        padding: 22px;
-    }
-
-    .solution-content h3 {
-        font-size: 19px;
-    }
-
-}
-/* =========================================================
-   SOBRE NÓS — HOME
-   ========================================================= */
-
-.about-home {
-    width: 100%;
-
-    padding: 110px 0;
-
-    background-color: #ffffff;
-
-    overflow: hidden;
-}
-
-
-/* =========================================================
-   CONTAINER
-   ========================================================= */
-
-.about-home-container {
-    width: 100%;
-    max-width: 1280px;
-
-    margin: 0 auto;
-
-    padding: 0 40px;
-
-    display: grid;
-
-    grid-template-columns:
-        minmax(0, 0.9fr)
-        minmax(0, 1.1fr);
-
-    align-items: center;
-
-    gap: 80px;
-}
-
-
-/* =========================================================
-   CONTEÚDO
-   ========================================================= */
-
-.about-home-content {
-    max-width: 570px;
-}
-
-
-.about-home-label {
-    display: inline-block;
-
-    margin-bottom: 18px;
-
-    color: #6b7885;
-
-    font-size: 11px;
-    font-weight: 700;
-
-    letter-spacing: 2.5px;
-}
-
-
-/* =========================================================
-   TÍTULO
-   ========================================================= */
-
-.about-home-content h2 {
-    margin: 0 0 28px;
-
-    color: #121e2d;
-
-    font-size: clamp(32px, 4vw, 48px);
-
-    font-weight: 600;
-
-    line-height: 1.12;
-
-    letter-spacing: -1px;
-}
-
-
-.about-home-content h2 span {
-    display: block;
-
-    color: #52677b;
-}
-
-
-/* =========================================================
-   TEXTO
-   ========================================================= */
-
-.about-home-text {
-    max-width: 530px;
-}
-
-
-.about-home-text p {
-    margin: 0 0 18px;
-
-    color: #687684;
-
-    font-size: 15px;
-
-    line-height: 1.75;
-}
-
-
-.about-home-text p:last-child {
-    margin-bottom: 0;
-}
-
-
-.about-home-text strong {
-    color: #121e2d;
-
-    font-weight: 600;
-}
-
-
-/* =========================================================
-   BOTÃO
-   ========================================================= */
-
-.about-home-button {
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 12px;
-
-    margin-top: 30px;
-
-    min-height: 48px;
-
-    padding: 0 24px;
-
-    color: #ffffff;
-
-    background-color: #121e2d;
-
-    border: 1px solid #121e2d;
-
-    font-size: 13px;
-    font-weight: 600;
-
-    text-decoration: none;
-
-    transition:
-        background-color 0.3s ease,
-        color 0.3s ease,
-        gap 0.3s ease,
-        transform 0.3s ease;
-}
-
-
-.about-home-button span {
-    font-size: 18px;
-
-    line-height: 1;
-}
-
-
-.about-home-button:hover {
-    color: #121e2d;
-
-    background-color: transparent;
-
-    gap: 17px;
-
-    transform: translateY(-2px);
-}
-
-
-/* =========================================================
-   IMAGEM
-   ========================================================= */
-
-.about-home-image {
-    position: relative;
-
-    width: 100%;
-
-    min-height: 520px;
-
-    overflow: hidden;
-
-    background-color: #121e2d;
-}
-
-
-.about-home-image img {
-    position: absolute;
-
-    inset: 0;
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    transition:
-        transform 0.8s ease;
-}
-
-
-.about-home-image:hover img {
-    transform: scale(1.04);
-}
-
-
-/* =========================================================
-   OVERLAY
-   ========================================================= */
-
-.about-home-image-overlay {
-    position: absolute;
-
-    inset: 0;
-
-    background:
-        linear-gradient(
-            to top,
-            rgba(8, 17, 28, 0.80),
-            rgba(8, 17, 28, 0.05) 65%
-        );
-}
-
-
-/* =========================================================
-   LEGENDA DA IMAGEM
-   ========================================================= */
-
-.about-home-image-caption {
-    position: absolute;
-
-    right: 32px;
-    bottom: 30px;
-    left: 32px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 7px;
-
-    color: #ffffff;
-}
-
-
-.about-home-image-caption span {
-    font-size: 10px;
-
-    font-weight: 700;
-
-    letter-spacing: 2px;
-
-    opacity: 0.75;
-}
-
-
-.about-home-image-caption strong {
-    max-width: 400px;
-
-    font-size: 21px;
-
-    font-weight: 500;
-
-    line-height: 1.3;
-}
-
-
-/* =========================================================
-   TABLET
-   ========================================================= */
-
-@media (max-width: 900px) {
-
-    .about-home {
-        padding: 80px 0;
-    }
-
-
-    .about-home-container {
-        grid-template-columns: 1fr;
-
-        gap: 45px;
-
-        padding: 0 25px;
-    }
-
-
-    .about-home-content {
-        max-width: 720px;
-    }
-
-
-    .about-home-text {
-        max-width: 680px;
-    }
-
-
-    .about-home-image {
-        min-height: 450px;
-    }
-
-}
-
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
-@media (max-width: 550px) {
-
-    .about-home {
-        padding: 65px 0;
-    }
-
-
-    .about-home-container {
-        padding: 0 18px;
-
-        gap: 35px;
-    }
-
-
-    .about-home-content h2 {
-        margin-bottom: 22px;
-
-        font-size: 30px;
-
-        letter-spacing: -0.5px;
-    }
-
-
-    .about-home-text p {
-        font-size: 14px;
-
-        line-height: 1.7;
-    }
-
-
-    .about-home-button {
-        width: 100%;
-
-        justify-content: center;
-    }
-
-
-    .about-home-image {
-        min-height: 360px;
-    }
-
-
-    .about-home-image-caption {
-        right: 22px;
-        bottom: 22px;
-        left: 22px;
-    }
-
-
-    .about-home-image-caption strong {
-        font-size: 18px;
-    }
-
-}
-
-/* =========================================================
-   FIM DA PÁGINA HOME 
-========================================================= */
-
-
-
 
 
 
@@ -1855,7 +775,7 @@ body {
             rgba(18, 30, 45, 0.72),
             rgba(18, 30, 45, 0.72)
         ),
-        url("../assets/imagens_solucoes/banner-cidade.jpg");
+        url("../assets/solucoes/banner-cidade.jpg");
 
     background-size: cover;
     background-position: center;
@@ -2025,6 +945,11 @@ body {
     object-fit: cover;
 }
 
+.solucao.ativo .solucao-card {
+    width: 50%;
+    height: 100%;
+}
+
 
 /* =========================================================
    RESUMO
@@ -2114,7 +1039,6 @@ body {
 
 .solucao-botao:hover {
     background-color: #35a9e0;
-
     transform: translateX(4px);
 }
 
@@ -2140,16 +1064,51 @@ body {
 
     overflow: hidden;
 
-    padding: 0;
+    box-sizing: border-box;
+
+    padding: 40px 0;
 
     background-color: #ffffff;
 
     opacity: 0;
 
+    transform: translateX(100%);
+
     transition:
-        width 0.4s ease,
+        width 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+        padding 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.4s ease,
+        transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/* Conteúdo começa escondido */
+
+.solucao-detalhes h2,
+.solucao-detalhes p,
+.solucao-detalhes ul,
+.solucao-detalhes .solucao-numero {
+    opacity: 0;
+
+    transform: translateX(20px);
+
+    transition:
         opacity 0.3s ease,
-        padding 0.4s ease;
+        transform 0.4s ease;
+}
+
+
+/* Conteúdo aparece quando o card abre */
+
+.solucao.ativo .solucao-detalhes h2,
+.solucao.ativo .solucao-detalhes p,
+.solucao.ativo .solucao-detalhes ul,
+.solucao.ativo .solucao-detalhes .solucao-numero {
+    opacity: 1;
+
+    transform: translateX(0);
+
+    transition-delay: 0.25s;
 }
 
 
@@ -2159,6 +1118,22 @@ body {
 
 .solucao.ativo {
     grid-column: span 2;
+
+    z-index: 2;
+
+    animation: entradaCard 0.45s ease;
+}
+
+@keyframes entradaCard {
+    from {
+        opacity: 0.7;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .solucao.ativo .solucao-detalhes {
@@ -2167,6 +1142,18 @@ body {
     padding: 40px;
 
     opacity: 1;
+
+    transform: translateX(0);
+}
+
+.solucao:hover {
+    transform: scale(1.03);
+
+    box-shadow: 0 12px 30px rgba(18, 30, 45, 0.15);
+}
+
+.solucao.ativo:hover {
+    transform: none;
 }
 
 
@@ -2195,11 +1182,15 @@ body {
 
     cursor: pointer;
 
-    transition: background-color 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
 }
 
 .solucao-fechar:hover {
     background-color: #35a9e0;
+
+    transform: rotate(90deg);
 }
 
 
@@ -2649,3 +1640,347 @@ body {
 /* =========================================================
    FIM - PÁGINA SERVIÇOS
 ========================================================= */
+
+
+
+
+
+
+
+
+/* =========================================================
+   PÁGINA — VERTICAIS
+   ========================================================= */
+
+
+/* =========================================================
+   HERO — VERTICAIS
+   ========================================================= */
+
+.verticals-hero {
+    position: relative;
+
+    min-height: 480px;
+
+    display: flex;
+    align-items: center;
+
+    background-image:
+        url("../assets/home/verticais-home.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+}
+
+
+.verticals-hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8, 17, 28, 0.92) 0%,
+            rgba(8, 17, 28, 0.72) 45%,
+            rgba(8, 17, 28, 0.25) 100%
+        );
+}
+
+
+.verticals-hero-container {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    padding: 90px 40px;
+}
+
+
+.verticals-label {
+    display: inline-block;
+
+    margin-bottom: 20px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+.verticals-hero h1 {
+    max-width: 720px;
+
+    margin: 0 0 25px;
+
+    color: #ffffff;
+
+    font-size: clamp(40px, 5vw, 64px);
+
+    font-weight: 600;
+
+    line-height: 1.05;
+
+    letter-spacing: -1.5px;
+}
+
+
+.verticals-hero h1 span {
+    display: block;
+
+    color: #d7e1e9;
+}
+
+
+.verticals-hero p {
+    max-width: 600px;
+
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.78);
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+/* =========================================================
+   INTRODUÇÃO
+   ========================================================= */
+
+.verticals-intro {
+    padding: 100px 0 70px;
+
+    background-color: #ffffff;
+}
+
+
+.verticals-container {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    padding: 0 40px;
+}
+
+
+.verticals-label-dark {
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    color: #6b7885;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+}
+
+
+.verticals-intro h2 {
+    max-width: 760px;
+
+    margin: 0 0 22px;
+
+    color: #121e2d;
+
+    font-size: clamp(32px, 4vw, 48px);
+
+    font-weight: 600;
+
+    line-height: 1.12;
+
+    letter-spacing: -1px;
+}
+
+
+.verticals-intro h2 span {
+    color: #52677b;
+}
+
+
+.verticals-intro p {
+    max-width: 720px;
+
+    margin: 0;
+
+    color: #687684;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+/* =========================================================
+   LISTA DE VERTICAIS
+   ========================================================= */
+
+.verticals-list {
+    padding: 30px 0 110px;
+
+    background-color: #ffffff;
+}
+
+
+.verticals-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.vertical-card {
+    position: relative;
+
+    min-height: 420px;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: flex-end;
+
+    background-color: #121e2d;
+
+    text-decoration: none;
+
+    border-radius: 2px;
+
+    box-shadow:
+        0 10px 35px rgba(18, 30, 45, 0.08);
+}
+
+
+.vertical-card img {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.7s ease;
+}
+
+
+.vertical-card:hover img {
+    transform: scale(1.06);
+}
+
+
+/* =========================================================
+   OVERLAY
+   ========================================================= */
+
+.vertical-card-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(8, 17, 28, 0.95) 0%,
+            rgba(8, 17, 28, 0.65) 45%,
+            rgba(8, 17, 28, 0.05) 100%
+        );
+
+    transition:
+        background 0.4s ease;
+}
+
+
+.vertical-card:hover .vertical-card-overlay {
+    background:
+        linear-gradient(
+            to top,
+            rgba(8, 17, 28, 0.97) 0%,
+            rgba(8, 17, 28, 0.72) 55%,
+            rgba(8, 17, 28, 0.15) 100%
+        );
+}
+
+
+/* =========================================================
+   CONTEÚDO
+   ========================================================= */
+
+.vertical-card-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    padding: 32px;
+}
+
+
+.vertical-number {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.vertical-card h3 {
+    margin: 0 0 12px;
+
+    color: #ffffff;
+
+    font-size: 25px;
+
+    font-weight: 600;
+
+    line-height: 1.2;
+}
+
+
+.vertical-card p {
+    max-width: 390px;
+
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.78);
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+.vertical-card {
+    scroll-margin-top: 110px;
+}
+.vertical-card:target {
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+
+    outline-offset: -2px;
+}

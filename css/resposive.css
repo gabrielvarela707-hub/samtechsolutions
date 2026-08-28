@@ -204,3 +204,97 @@
         font-size: 22px;
     }
 }
+
+
+
+/* =========================================================
+   RESPONSIVO DO VERTICAIS
+   ========================================================= */
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .verticals-hero {
+        min-height: 420px;
+    }
+
+
+    .verticals-hero-container {
+        padding: 75px 25px;
+    }
+
+
+    .verticals-container {
+        padding: 0 25px;
+    }
+
+
+    .verticals-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .vertical-card {
+        min-height: 380px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .verticals-hero {
+        min-height: 440px;
+    }
+
+
+    .verticals-hero-container {
+        padding: 65px 20px;
+    }
+
+
+    .verticals-hero h1 {
+        font-size: 38px;
+    }
+
+
+    .verticals-intro {
+        padding: 70px 0 45px;
+    }
+
+
+    .verticals-container {
+        padding: 0 20px;
+    }
+
+
+    .verticals-intro h2 {
+        font-size: 30px;
+    }
+
+
+    .verticals-grid {
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+    }
+
+
+    .vertical-card {
+        min-height: 360px;
+    }
+
+
+    .vertical-card-content {
+        padding: 25px;
+    }
+
+}
