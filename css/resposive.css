@@ -3,150 +3,138 @@
    ========================================= */
 
 @media (max-width: 900px) {
+  .projetos {
+    padding: 60px 25px;
+  }
 
-    .projetos {
-        padding: 60px 25px;
-    }
+  .projeto {
+    grid-template-columns: 1fr;
+  }
 
-    .projeto {
-        grid-template-columns: 1fr;
-    }
+  .projeto > img {
+    height: 300px;
+    min-height: auto;
+  }
 
-    .projeto > img {
-        height: 300px;
-        min-height: auto;
-    }
-
-    .projeto-conteudo {
-        padding: 35px;
-    }
+  .projeto-conteudo {
+    padding: 35px;
+  }
 }
 
-
 @media (max-width: 600px) {
+  .projetos {
+    padding: 50px 20px;
+  }
 
-    .projetos {
-        padding: 50px 20px;
-    }
+  .projetos-header h1 {
+    font-size: 32px;
+  }
 
-    .projetos-header h1 {
-        font-size: 32px;
-    }
+  .projeto > img {
+    height: 220px;
+  }
 
-    .projeto > img {
-        height: 220px;
-    }
+  .projeto-conteudo {
+    padding: 25px;
+  }
 
-    .projeto-conteudo {
-        padding: 25px;
-    }
-
-    .projeto-conteudo h2 {
-        font-size: 23px;
-    }
+  .projeto-conteudo h2 {
+    font-size: 23px;
+  }
 }
 /* =========================================
    FIM RESPONSIVIDADE PÁGINA PROJETOS
    ========================================= */
 
-   /* =========================================================
+/* =========================================================
    TABLET - SOLUÇÕES
    ========================================================= */
 
 @media (max-width: 1000px) {
+  .solucoes-lista {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .solucoes-lista {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .solucao.ativo {
+    grid-column: span 2;
+  }
 
-    .solucao.ativo {
-        grid-column: span 2;
-    }
+  .solucao.ativo .solucao-detalhes {
+    width: 50%;
+  }
 
-    .solucao.ativo .solucao-detalhes {
-        width: 50%;
-    }
-
-    .solucoes-banner-conteudo h1 {
-        font-size: 44px;
-    }
+  .solucoes-banner-conteudo h1 {
+    font-size: 44px;
+  }
 }
-
 
 /* =========================================================
    CELULAR - SOLUÇÕES
    ========================================================= */
 
 @media (max-width: 650px) {
+  .solucoes-banner {
+    min-height: 350px;
 
-    .solucoes-banner {
-        min-height: 350px;
+    padding: 60px 20px;
+  }
 
-        padding: 60px 20px;
-    }
+  .solucoes-banner-conteudo h1 {
+    font-size: 34px;
+  }
 
-    .solucoes-banner-conteudo h1 {
-        font-size: 34px;
-    }
+  .solucoes-banner-conteudo p {
+    font-size: 16px;
+  }
 
-    .solucoes-banner-conteudo p {
-        font-size: 16px;
-    }
+  .solucoes {
+    padding: 60px 20px;
+  }
 
+  .solucoes-header h1 {
+    font-size: 32px;
+  }
 
-    .solucoes {
-        padding: 60px 20px;
-    }
+  .solucoes-lista {
+    grid-template-columns: 1fr;
+  }
 
-    .solucoes-header h1 {
-        font-size: 32px;
-    }
+  .solucao {
+    min-height: 480px;
+  }
 
-
-    .solucoes-lista {
-        grid-template-columns: 1fr;
-    }
-
-
-    .solucao {
-        min-height: 480px;
-    }
-
-
-    /*
+  /*
        No celular não temos espaço
        para a expansão lateral.
        O card passa a expandir verticalmente.
     */
 
-    .solucao.ativo {
-        grid-column: span 1;
+  .solucao.ativo {
+    grid-column: span 1;
 
-        min-height: auto;
-    }
+    min-height: auto;
+  }
 
-    .solucao.ativo .solucao-detalhes {
-        position: relative;
+  .solucao.ativo .solucao-detalhes {
+    position: relative;
 
-        width: 100%;
-        height: auto;
+    width: 100%;
+    height: auto;
 
-        padding: 35px 25px;
+    padding: 35px 25px;
 
-        opacity: 1;
-    }
+    opacity: 1;
+  }
 
-    .solucao.ativo .solucao-card {
-        height: auto;
-    }
+  .solucao.ativo .solucao-card {
+    height: auto;
+  }
 
+  .solucao-detalhes h2 {
+    padding-right: 35px;
 
-    .solucao-detalhes h2 {
-        padding-right: 35px;
-
-        font-size: 24px;
-    }
-
+    font-size: 24px;
+  }
 }
 
 /* =========================================================
@@ -154,58 +142,56 @@
    ========================================================= */
 
 @media (max-width: 992px) {
-    .quem-somos {
-        grid-template-columns: 1fr;
-        padding: 40px 20px 20px 20px;
-        gap: 20px;
-    }
+  .quem-somos {
+    grid-template-columns: 1fr;
+    padding: 40px 20px 20px 20px;
+    gap: 20px;
+  }
 
-    /* OCULTA AS IMAGENS DO QUEM SOMOS NO RESPONSIVO */
-    .quem-somos > img {
-        display: none;
-    }
+  /* OCULTA AS IMAGENS DO QUEM SOMOS NO RESPONSIVO */
+  .quem-somos > img {
+    display: none;
+  }
 
-    .sobre, 
-    .missao-valores {
-        padding: 30px;
-    }
+  .sobre,
+  .missao-valores {
+    padding: 30px;
+  }
 
-    .nosso-time {
-        padding: 0 20px;
-        margin: 20px auto 40px auto;
-    }
+  .nosso-time {
+    padding: 0 20px;
+    margin: 20px auto 40px auto;
+  }
 
-    .membro-card {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 30px;
-        gap: 25px;
-    }
+  .membro-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    gap: 25px;
+  }
 
-    .membro-foto {
-        width: 220px;
-        height: 270px;
-    }
+  .membro-foto {
+    width: 220px;
+    height: 270px;
+  }
 }
 
 @media (max-width: 576px) {
-    .sobre h1,
-    .missao-valores h2 {
-        font-size: 26px;
-    }
+  .sobre h1,
+  .missao-valores h2 {
+    font-size: 26px;
+  }
 
-    .nosso-time > h2 {
-        font-size: 28px;
-        margin-bottom: 30px;
-    }
+  .nosso-time > h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
 
-    .membro-info h3 {
-        font-size: 22px;
-    }
+  .membro-info h3 {
+    font-size: 22px;
+  }
 }
-
-
 
 /* =========================================================
    RESPONSIVO DO VERTICAIS
@@ -216,803 +202,985 @@
    ========================================================= */
 
 @media (max-width: 900px) {
+  .verticals-hero {
+    min-height: 420px;
+  }
 
-    .verticals-hero {
-        min-height: 420px;
-    }
+  .verticals-hero-container {
+    padding: 75px 25px;
+  }
 
+  .verticals-container {
+    padding: 0 25px;
+  }
 
-    .verticals-hero-container {
-        padding: 75px 25px;
-    }
+  .verticals-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-
-    .verticals-container {
-        padding: 0 25px;
-    }
-
-
-    .verticals-grid {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
-
-
-    .vertical-card {
-        min-height: 380px;
-    }
-
+  .vertical-card {
+    min-height: 380px;
+  }
 }
-
 
 /* =========================================================
    MOBILE
    ========================================================= */
 
 @media (max-width: 600px) {
+  .verticals-hero {
+    min-height: 440px;
+  }
 
-    .verticals-hero {
-        min-height: 440px;
-    }
+  .verticals-hero-container {
+    padding: 65px 20px;
+  }
 
+  .verticals-hero h1 {
+    font-size: 38px;
+  }
 
-    .verticals-hero-container {
-        padding: 65px 20px;
-    }
+  .verticals-intro {
+    padding: 70px 0 45px;
+  }
 
+  .verticals-container {
+    padding: 0 20px;
+  }
 
-    .verticals-hero h1 {
-        font-size: 38px;
-    }
+  .verticals-intro h2 {
+    font-size: 30px;
+  }
 
+  .verticals-grid {
+    grid-template-columns: 1fr;
 
-    .verticals-intro {
-        padding: 70px 0 45px;
-    }
+    gap: 16px;
+  }
 
+  .vertical-card {
+    min-height: 360px;
+  }
 
-    .verticals-container {
-        padding: 0 20px;
-    }
-
-
-    .verticals-intro h2 {
-        font-size: 30px;
-    }
-
-
-    .verticals-grid {
-        grid-template-columns: 1fr;
-
-        gap: 16px;
-    }
-
-
-    .vertical-card {
-        min-height: 360px;
-    }
-
-
-    .vertical-card-content {
-        padding: 25px;
-    }
-
+  .vertical-card-content {
+    padding: 25px;
+  }
 }
 
 /* =========================================================
    RESPONSIVIDADE — PÁGINA CONTATO
    ========================================================= */
 
-
 /* =========================================================
    TABLETS
    ========================================================= */
 
 @media (max-width: 1024px) {
+  /* CONTAINER */
 
-    /* CONTAINER */
+  .contact-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 
-    .contact-container {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
+  /* HERO */
 
+  .contact-hero {
+    padding: 70px 0 65px;
+  }
 
-    /* HERO */
+  /* CONTEÚDO */
 
-    .contact-hero {
-        padding: 70px 0 65px;
-    }
+  .contact-content {
+    padding: 70px 0;
+  }
 
+  .contact-grid {
+    gap: 40px;
+  }
 
-    /* CONTEÚDO */
+  /* TÍTULOS */
 
-    .contact-content {
-        padding: 70px 0;
-    }
+  .contact-info h2 {
+    font-size: 34px;
+  }
 
-    .contact-grid {
-        gap: 40px;
-    }
+  .contact-form-card h2 {
+    font-size: 30px;
+  }
 
+  /* FORMULÁRIO */
 
-    /* TÍTULOS */
+  .contact-form-card {
+    padding: 35px;
+  }
 
-    .contact-info h2 {
-        font-size: 34px;
-    }
+  /* LOCALIZAÇÃO */
 
-    .contact-form-card h2 {
-        font-size: 30px;
-    }
-
-
-    /* FORMULÁRIO */
-
-    .contact-form-card {
-        padding: 35px;
-    }
-
-
-    /* LOCALIZAÇÃO */
-
-    .contact-location {
-        padding: 60px 0 70px;
-    }
-
+  .contact-location {
+    padding: 60px 0 70px;
+  }
 }
-
 
 /* =========================================================
    CELULARES
    ========================================================= */
 
 @media (max-width: 768px) {
+  /* CONTAINER */
 
-    /* CONTAINER */
+  .contact-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-    .contact-container {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+  /* HERO */
 
+  .contact-hero {
+    padding: 55px 0 50px;
+  }
 
-    /* HERO */
+  .contact-eyebrow {
+    margin-bottom: 14px;
 
-    .contact-hero {
-        padding: 55px 0 50px;
-    }
+    font-size: 12px;
+  }
 
-    .contact-eyebrow {
-        margin-bottom: 14px;
+  .contact-hero h1 {
+    margin-bottom: 20px;
 
-        font-size: 12px;
-    }
+    font-size: clamp(36px, 10vw, 48px);
 
-    .contact-hero h1 {
-        margin-bottom: 20px;
+    line-height: 1.1;
+  }
 
-        font-size: clamp(36px, 10vw, 48px);
+  .contact-hero p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
 
-        line-height: 1.1;
-    }
-
-    .contact-hero p {
-        font-size: 16px;
-        line-height: 1.6;
-    }
-
-
-    /* =====================================================
+  /* =====================================================
        INFORMAÇÕES + FORMULÁRIO
        ===================================================== */
 
-    .contact-content {
-        padding: 55px 0;
-    }
+  .contact-content {
+    padding: 55px 0;
+  }
 
-    .contact-grid {
-        grid-template-columns: 1fr;
+  .contact-grid {
+    grid-template-columns: 1fr;
 
-        gap: 50px;
-    }
+    gap: 50px;
+  }
 
-
-    /* =====================================================
+  /* =====================================================
        INFORMAÇÕES
        ===================================================== */
 
-    .contact-info h2 {
-        margin-bottom: 18px;
+  .contact-info h2 {
+    margin-bottom: 18px;
 
-        font-size: 32px;
-        line-height: 1.2;
-    }
+    font-size: 32px;
+    line-height: 1.2;
+  }
 
-    .contact-intro {
-        margin-bottom: 30px;
+  .contact-intro {
+    margin-bottom: 30px;
 
-        font-size: 15px;
-    }
+    font-size: 15px;
+  }
 
-    .contact-info-item {
-        padding: 20px 0;
-    }
+  .contact-info-item {
+    padding: 20px 0;
+  }
 
-
-    /* =====================================================
+  /* =====================================================
        FORMULÁRIO
        ===================================================== */
 
-    .contact-form-card {
-        padding: 30px 25px;
-    }
+  .contact-form-card {
+    padding: 30px 25px;
+  }
 
-    .contact-form-card h2 {
-        font-size: 28px;
-    }
+  .contact-form-card h2 {
+    font-size: 28px;
+  }
 
-    .contact-form-card > p {
-        margin-bottom: 28px;
-    }
+  .contact-form-card > p {
+    margin-bottom: 28px;
+  }
 
+  /* NOME + SOBRENOME */
 
-    /* NOME + SOBRENOME */
+  .form-row {
+    grid-template-columns: 1fr;
 
-    .form-row {
-        grid-template-columns: 1fr;
+    gap: 20px;
+  }
 
-        gap: 20px;
-    }
+  /* CAMPOS */
 
+  .form-group input,
+  .form-group textarea {
+    padding: 14px 15px;
 
-    /* CAMPOS */
+    font-size: 15px;
+  }
 
-    .form-group input,
-    .form-group textarea {
-        padding: 14px 15px;
+  /* BOTÃO */
 
-        font-size: 15px;
-    }
+  .contact-submit {
+    width: 100%;
 
+    padding: 15px 20px;
+  }
 
-    /* BOTÃO */
-
-    .contact-submit {
-        width: 100%;
-
-        padding: 15px 20px;
-    }
-
-
-    /* =====================================================
+  /* =====================================================
        LOCALIZAÇÃO
        ===================================================== */
 
-    .contact-location {
-        padding: 50px 0 60px;
-    }
+  .contact-location {
+    padding: 50px 0 60px;
+  }
 
-    .contact-location-header {
-        margin-bottom: 25px;
-    }
+  .contact-location-header {
+    margin-bottom: 25px;
+  }
 
-    .contact-location-header h2 {
-        font-size: 30px;
-        line-height: 1.2;
-    }
+  .contact-location-header h2 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
 
-    .contact-map {
-        border-radius: 8px;
-    }
+  .contact-map {
+    border-radius: 8px;
+  }
 
-    .contact-map iframe {
-        height: 300px;
-    }
-
+  .contact-map iframe {
+    height: 300px;
+  }
 }
-
 
 /* =========================================================
    CELULARES PEQUENOS
    ========================================================= */
 
 @media (max-width: 480px) {
+  .contact-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 
-    .contact-container {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+  /* HERO */
 
+  .contact-hero {
+    padding: 45px 0;
+  }
 
-    /* HERO */
+  .contact-hero h1 {
+    font-size: 34px;
+  }
 
-    .contact-hero {
-        padding: 45px 0;
-    }
+  .contact-hero p {
+    font-size: 15px;
+  }
 
-    .contact-hero h1 {
-        font-size: 34px;
-    }
+  /* CONTEÚDO */
 
-    .contact-hero p {
-        font-size: 15px;
-    }
+  .contact-content {
+    padding: 45px 0;
+  }
 
+  /* INFORMAÇÕES */
 
-    /* CONTEÚDO */
+  .contact-info h2 {
+    font-size: 28px;
+  }
 
-    .contact-content {
-        padding: 45px 0;
-    }
+  /* FORMULÁRIO */
 
+  .contact-form-card {
+    padding: 25px 20px;
+  }
 
-    /* INFORMAÇÕES */
+  .contact-form-card h2 {
+    font-size: 26px;
+  }
 
-    .contact-info h2 {
-        font-size: 28px;
-    }
+  /* LOCALIZAÇÃO */
 
+  .contact-location {
+    padding: 45px 0 50px;
+  }
 
-    /* FORMULÁRIO */
+  .contact-location-header h2 {
+    font-size: 27px;
+  }
 
-    .contact-form-card {
-        padding: 25px 20px;
-    }
-
-    .contact-form-card h2 {
-        font-size: 26px;
-    }
-
-
-    /* LOCALIZAÇÃO */
-
-    .contact-location {
-        padding: 45px 0 50px;
-    }
-
-    .contact-location-header h2 {
-        font-size: 27px;
-    }
-
-    .contact-map iframe {
-        height: 260px;
-    }
-
+  .contact-map iframe {
+    height: 260px;
+  }
 }
 /* =========================================================
    RESPONSIVIDADE — PÁGINA VERTICAIS
    ========================================================= */
-
 
 /* =========================================================
    DESKTOP GRANDE
    ========================================================= */
 
 @media (min-width: 1400px) {
+  .verticals-hero {
+    min-height: 520px;
+  }
 
-    .verticals-hero {
-        min-height: 520px;
-    }
+  .verticals-hero-container,
+  .verticals-container {
+    max-width: 1400px;
+  }
 
-    .verticals-hero-container,
-    .verticals-container {
-        max-width: 1400px;
-    }
-
-    .vertical-card {
-        min-height: 460px;
-    }
-
+  .vertical-card {
+    min-height: 460px;
+  }
 }
-
 
 /* =========================================================
    NOTEBOOK / DESKTOP
    ========================================================= */
 
 @media (max-width: 1200px) {
+  .verticals-hero {
+    min-height: 460px;
+  }
 
-    .verticals-hero {
-        min-height: 460px;
-    }
+  .verticals-hero-container,
+  .verticals-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 
-    .verticals-hero-container,
-    .verticals-container {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
+  .verticals-grid {
+    gap: 18px;
+  }
 
-    .verticals-grid {
-        gap: 18px;
-    }
+  .vertical-card {
+    min-height: 400px;
+  }
 
-    .vertical-card {
-        min-height: 400px;
-    }
-
-    .vertical-card-content {
-        padding: 28px;
-    }
-
+  .vertical-card-content {
+    padding: 28px;
+  }
 }
-
 
 /* =========================================================
    TABLET
    ========================================================= */
 
 @media (max-width: 900px) {
-
-    /* -----------------------------------------
+  /* -----------------------------------------
        HERO
        ----------------------------------------- */
 
-    .verticals-hero {
-        min-height: 420px;
+  .verticals-hero {
+    min-height: 420px;
 
-        background-position: center;
-    }
+    background-position: center;
+  }
 
-    .verticals-hero-container {
-        padding: 70px 25px;
-    }
+  .verticals-hero-container {
+    padding: 70px 25px;
+  }
 
-    .verticals-hero h1 {
-        max-width: 650px;
+  .verticals-hero h1 {
+    max-width: 650px;
 
-        font-size: clamp(38px, 6vw, 52px);
-    }
+    font-size: clamp(38px, 6vw, 52px);
+  }
 
-    .verticals-hero p {
-        max-width: 550px;
+  .verticals-hero p {
+    max-width: 550px;
 
-        font-size: 15px;
-    }
+    font-size: 15px;
+  }
 
-
-    /* -----------------------------------------
+  /* -----------------------------------------
        INTRODUÇÃO
        ----------------------------------------- */
 
-    .verticals-intro {
-        padding: 80px 0 55px;
-    }
+  .verticals-intro {
+    padding: 80px 0 55px;
+  }
 
-    .verticals-container {
-        padding-left: 25px;
-        padding-right: 25px;
-    }
+  .verticals-container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 
-    .verticals-intro h2 {
-        max-width: 650px;
+  .verticals-intro h2 {
+    max-width: 650px;
 
-        font-size: clamp(32px, 5vw, 42px);
-    }
+    font-size: clamp(32px, 5vw, 42px);
+  }
 
-    .verticals-intro p {
-        max-width: 650px;
+  .verticals-intro p {
+    max-width: 650px;
 
-        font-size: 15px;
-    }
+    font-size: 15px;
+  }
 
-
-    /* -----------------------------------------
+  /* -----------------------------------------
        GRID
        ----------------------------------------- */
 
-    .verticals-list {
-        padding: 25px 0 80px;
-    }
+  .verticals-list {
+    padding: 25px 0 80px;
+  }
 
-    .verticals-grid {
-        grid-template-columns: repeat(2, 1fr);
+  .verticals-grid {
+    grid-template-columns: repeat(2, 1fr);
 
-        gap: 18px;
-    }
+    gap: 18px;
+  }
 
-
-    /* -----------------------------------------
+  /* -----------------------------------------
        CARDS
        ----------------------------------------- */
 
-    .vertical-card {
-        min-height: 380px;
+  .vertical-card {
+    min-height: 380px;
 
-        scroll-margin-top: 90px;
-    }
+    scroll-margin-top: 90px;
+  }
 
-    .vertical-card-content {
-        padding: 25px;
-    }
+  .vertical-card-content {
+    padding: 25px;
+  }
 
-    .vertical-card h3 {
-        font-size: 22px;
-    }
+  .vertical-card h3 {
+    font-size: 22px;
+  }
 
-    .vertical-card p {
-        font-size: 13px;
-    }
-
+  .vertical-card p {
+    font-size: 13px;
+  }
 }
-
 
 /* =========================================================
    TABLET PEQUENO
    ========================================================= */
 
 @media (max-width: 700px) {
+  .verticals-hero {
+    min-height: 400px;
+  }
 
-    .verticals-hero {
-        min-height: 400px;
-    }
+  .verticals-hero-container {
+    padding: 65px 22px;
+  }
 
-    .verticals-hero-container {
-        padding: 65px 22px;
-    }
+  .verticals-hero h1 {
+    font-size: 40px;
 
-    .verticals-hero h1 {
-        font-size: 40px;
+    letter-spacing: -1px;
+  }
 
-        letter-spacing: -1px;
-    }
+  .verticals-hero p {
+    font-size: 14px;
 
-    .verticals-hero p {
-        font-size: 14px;
+    line-height: 1.7;
+  }
 
-        line-height: 1.7;
-    }
+  .verticals-container {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
 
+  .verticals-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .verticals-container {
-        padding-left: 22px;
-        padding-right: 22px;
-    }
-
-
-    .verticals-grid {
-        grid-template-columns: 1fr;
-    }
-
-
-    .vertical-card {
-        min-height: 400px;
-    }
-
+  .vertical-card {
+    min-height: 400px;
+  }
 }
-
 
 /* =========================================================
    MOBILE
    ========================================================= */
 
 @media (max-width: 550px) {
-
-    /* -----------------------------------------
+  /* -----------------------------------------
        HERO
        ----------------------------------------- */
 
-    .verticals-hero {
-        min-height: 430px;
+  .verticals-hero {
+    min-height: 430px;
 
-        background-position: 60% center;
-    }
+    background-position: 60% center;
+  }
 
-    .verticals-hero-overlay {
-        background:
-            linear-gradient(
-                90deg,
-                rgba(8, 17, 28, 0.94) 0%,
-                rgba(8, 17, 28, 0.78) 65%,
-                rgba(8, 17, 28, 0.45) 100%
-            );
-    }
+  .verticals-hero-overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(8, 17, 28, 0.94) 0%,
+      rgba(8, 17, 28, 0.78) 65%,
+      rgba(8, 17, 28, 0.45) 100%
+    );
+  }
 
-    .verticals-hero-container {
-        padding: 65px 20px;
-    }
+  .verticals-hero-container {
+    padding: 65px 20px;
+  }
 
-    .verticals-label {
-        margin-bottom: 16px;
+  .verticals-label {
+    margin-bottom: 16px;
 
-        font-size: 10px;
+    font-size: 10px;
 
-        letter-spacing: 2.5px;
-    }
+    letter-spacing: 2.5px;
+  }
 
-    .verticals-hero h1 {
-        max-width: 400px;
+  .verticals-hero h1 {
+    max-width: 400px;
 
-        margin-bottom: 20px;
+    margin-bottom: 20px;
 
-        font-size: 36px;
+    font-size: 36px;
 
-        line-height: 1.08;
-    }
+    line-height: 1.08;
+  }
 
-    .verticals-hero p {
-        max-width: 420px;
+  .verticals-hero p {
+    max-width: 420px;
 
-        font-size: 14px;
+    font-size: 14px;
 
-        line-height: 1.65;
-    }
+    line-height: 1.65;
+  }
 
-
-    /* -----------------------------------------
+  /* -----------------------------------------
        INTRODUÇÃO
        ----------------------------------------- */
 
-    .verticals-intro {
-        padding: 65px 0 45px;
-    }
+  .verticals-intro {
+    padding: 65px 0 45px;
+  }
 
-    .verticals-container {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+  .verticals-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-    .verticals-label-dark {
-        margin-bottom: 15px;
+  .verticals-label-dark {
+    margin-bottom: 15px;
 
-        font-size: 10px;
+    font-size: 10px;
 
-        letter-spacing: 2.2px;
-    }
+    letter-spacing: 2.2px;
+  }
 
-    .verticals-intro h2 {
-        margin-bottom: 18px;
+  .verticals-intro h2 {
+    margin-bottom: 18px;
 
-        font-size: 30px;
+    font-size: 30px;
 
-        line-height: 1.15;
+    line-height: 1.15;
 
-        letter-spacing: -0.5px;
-    }
+    letter-spacing: -0.5px;
+  }
 
-    .verticals-intro p {
-        font-size: 14px;
+  .verticals-intro p {
+    font-size: 14px;
 
-        line-height: 1.75;
-    }
+    line-height: 1.75;
+  }
 
-
-    /* -----------------------------------------
+  /* -----------------------------------------
        LISTA
        ----------------------------------------- */
 
-    .verticals-list {
-        padding: 20px 0 65px;
-    }
+  .verticals-list {
+    padding: 20px 0 65px;
+  }
 
-
-    /* -----------------------------------------
+  /* -----------------------------------------
        GRID
        ----------------------------------------- */
 
-    .verticals-grid {
-        display: flex;
+  .verticals-grid {
+    display: flex;
 
-        flex-direction: column;
+    flex-direction: column;
 
-        gap: 15px;
-    }
+    gap: 15px;
+  }
 
-
-    /* -----------------------------------------
+  /* -----------------------------------------
        CARD
        ----------------------------------------- */
 
-    .vertical-card {
-        width: 100%;
+  .vertical-card {
+    width: 100%;
 
-        min-height: 360px;
+    min-height: 360px;
 
-        border-radius: 2px;
+    border-radius: 2px;
 
-        scroll-margin-top: 85px;
-    }
+    scroll-margin-top: 85px;
+  }
 
+  .vertical-card img {
+    transition: transform 0.5s ease;
+  }
 
-    .vertical-card img {
-        transition:
-            transform 0.5s ease;
-    }
-
-
-    /* -----------------------------------------
+  /* -----------------------------------------
        CONTEÚDO
        ----------------------------------------- */
 
-    .vertical-card-content {
-        padding: 24px;
-    }
+  .vertical-card-content {
+    padding: 24px;
+  }
 
-    .vertical-number {
-        margin-bottom: 14px;
+  .vertical-number {
+    margin-bottom: 14px;
 
-        font-size: 10px;
-    }
+    font-size: 10px;
+  }
 
-    .vertical-card h3 {
-        margin-bottom: 10px;
+  .vertical-card h3 {
+    margin-bottom: 10px;
 
-        font-size: 22px;
-    }
+    font-size: 22px;
+  }
 
-    .vertical-card p {
-        max-width: 100%;
+  .vertical-card p {
+    max-width: 100%;
 
-        font-size: 13px;
+    font-size: 13px;
 
-        line-height: 1.55;
-    }
+    line-height: 1.55;
+  }
 
-    .vertical-arrow {
-        margin-top: 18px;
+  .vertical-arrow {
+    margin-top: 18px;
 
-        font-size: 20px;
-    }
-
+    font-size: 20px;
+  }
 }
-
 
 /* =========================================================
    MOBILE PEQUENO
    ========================================================= */
 
 @media (max-width: 380px) {
+  .verticals-hero {
+    min-height: 410px;
+  }
 
-    .verticals-hero {
-        min-height: 410px;
-    }
+  .verticals-hero-container {
+    padding: 55px 18px;
+  }
 
-    .verticals-hero-container {
-        padding: 55px 18px;
-    }
+  .verticals-hero h1 {
+    font-size: 32px;
+  }
 
-    .verticals-hero h1 {
-        font-size: 32px;
-    }
+  .verticals-hero p {
+    font-size: 13px;
+  }
 
-    .verticals-hero p {
-        font-size: 13px;
-    }
+  .verticals-container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
 
+  .verticals-intro {
+    padding: 55px 0 40px;
+  }
 
-    .verticals-container {
-        padding-left: 18px;
-        padding-right: 18px;
-    }
+  .verticals-intro h2 {
+    font-size: 27px;
+  }
 
+  .verticals-intro p {
+    font-size: 13px;
+  }
 
-    .verticals-intro {
-        padding: 55px 0 40px;
-    }
+  .vertical-card {
+    min-height: 330px;
+  }
 
-    .verticals-intro h2 {
-        font-size: 27px;
-    }
+  .vertical-card-content {
+    padding: 20px;
+  }
 
-    .verticals-intro p {
-        font-size: 13px;
-    }
+  .vertical-card h3 {
+    font-size: 20px;
+  }
 
-
-    .vertical-card {
-        min-height: 330px;
-    }
-
-    .vertical-card-content {
-        padding: 20px;
-    }
-
-    .vertical-card h3 {
-        font-size: 20px;
-    }
-
-    .vertical-card p {
-        font-size: 12px;
-    }
-
+  .vertical-card p {
+    font-size: 12px;
+  }
 }
+
+/* =========================================================
+   INÍCIO DO RESPONSIVO - PÁGINA SERVIÇOS
+========================================================= */
+
+/* =========================================================
+   INÍCIO TABLET E TELAS MENORES - ATÉ 1200PX
+========================================================= */
+
+@media (max-width: 1200px) {
+  .segments .verticals-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .services-contact-box {
+    gap: 55px;
+  }
+}
+
+/* =========================================================
+   FIM TABLET E TELAS MENORES - ATÉ 1200PX
+========================================================= */
+
+/* =========================================================
+   INÍCIO TABLET - ATÉ 900PX
+========================================================= */
+
+@media (max-width: 900px) {
+  .services-page {
+    padding-bottom: 80px;
+  }
+
+  .services-hero {
+    min-height: 380px;
+  }
+
+  .services-hero-content {
+    padding: 0 40px;
+  }
+
+  .services-hero h1 {
+    font-size: 44px;
+  }
+
+  .services-container {
+    padding: 55px 24px 0;
+  }
+
+  .services-tabs {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .service-tab {
+    min-width: 0;
+  }
+
+  .service-panel {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .service-image {
+    min-height: 360px;
+    height: 360px;
+  }
+
+  .service-content {
+    padding: 45px 36px 50px;
+  }
+
+  .segments {
+    padding: 70px 0 80px;
+  }
+
+  .segments-container {
+    padding: 0 24px;
+  }
+
+  .segments-title {
+    margin-bottom: 36px;
+    font-size: 30px;
+  }
+
+  .segments .verticals-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .services-contact {
+    padding: 70px 24px;
+  }
+
+  .services-contact-box {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .services-contact-title h2 {
+    max-width: 650px;
+  }
+}
+
+/* =========================================================
+   FIM TABLET - ATÉ 900PX
+========================================================= */
+
+/* =========================================================
+   INÍCIO MOBILE - ATÉ 600PX
+========================================================= */
+
+@media (max-width: 600px) {
+  .services-page {
+    padding-bottom: 60px;
+  }
+
+  .services-hero {
+    min-height: 330px;
+  }
+
+  .services-hero-content {
+    padding: 0 24px;
+  }
+
+  .services-hero h1 {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  .services-hero-text {
+    margin-top: 16px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .services-container {
+    padding: 40px 18px 0;
+  }
+
+  .services-heading {
+    margin-bottom: 36px;
+  }
+
+  .services-heading h1 {
+    font-size: 34px;
+  }
+
+  .services-box {
+    border-radius: 14px;
+  }
+
+  .services-tabs {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+  }
+
+  .service-tab {
+    flex: 0 0 145px;
+    min-height: 76px;
+    padding: 15px 10px;
+    scroll-snap-align: start;
+  }
+
+  .service-panel {
+    display: block;
+  }
+
+  .service-image {
+    min-height: 240px;
+    height: 240px;
+  }
+
+  .service-content {
+    padding: 34px 24px 40px;
+  }
+
+  .service-content h2 {
+    margin-bottom: 18px;
+    font-size: 28px;
+  }
+
+  .service-content > p,
+  .service-detail p {
+    font-size: 14px;
+  }
+
+  .segments {
+    padding: 55px 0 65px;
+  }
+
+  .segments-container {
+    padding: 0 18px;
+  }
+
+  .segments-title {
+    margin-bottom: 30px;
+    font-size: 26px;
+  }
+
+  .services-contact {
+    padding: 55px 18px;
+  }
+
+  .services-contact-box {
+    gap: 35px;
+  }
+
+  .services-contact-title h2 {
+    font-size: 30px;
+  }
+
+  .services-form input {
+    min-height: 48px;
+  }
+
+  .services-form textarea {
+    min-height: 130px;
+  }
+
+  .services-form button {
+    width: 100%;
+  }
+}
+
+/* =========================================================
+   FIM MOBILE - ATÉ 600PX
+========================================================= */
+
+/* =========================================================
+   INÍCIO MOBILE PEQUENO - ATÉ 480PX
+========================================================= */
+
+@media (max-width: 480px) {
+  .segments .verticals-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .segments .vertical-card {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+  }
+
+  .segments .vertical-image {
+    height: 120px;
+    aspect-ratio: auto;
+  }
+
+  .segments .vertical-content {
+    min-height: 120px !important;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* =========================================================
+   FIM MOBILE PEQUENO - ATÉ 480PX
+========================================================= */
+
+/* =========================================================
+   FIM DO RESPONSIVO - PÁGINA SERVIÇOS
+========================================================= */
