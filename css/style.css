@@ -1486,62 +1486,117 @@ body {
 }
 
 /* =========================================================
-   SEGMENTOS ATENDIDOS
+   SEGMENTOS ATENDIDOS - PÁGINA SERVIÇOS
 ========================================================= */
 
 .segments {
-    padding: 95px 6%;
-    background: #ffffff;
+  width: 100%;
+  padding: 90px 0 100px;
+  background-color: #ffffff;
 }
 
 .segments-container {
-    width: 100%;
-    max-width: 1240px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
 }
 
 .segments-title {
-    margin: 0 0 55px;
-    text-align: center;
-    color: #102033;
-    font-size: clamp(30px, 4vw, 44px);
-    line-height: 1.15;
+  margin: 0 0 50px;
+  text-align: center;
+  color: #121e2d;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
-.segments-grid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    align-items: stretch;
+.segments .verticals-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 16px;
+  align-items: start;
 }
 
-.segment-card {
-    min-width: 0;
-    padding: 10px 14px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+.segments .vertical-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0 !important;
+  height: fit-content !important;
+  align-self: start;
+  overflow: hidden;
+  background-color: #ffffff;
+  border: 1px solid #e3e7eb;
+  border-radius: 3px;
+  text-decoration: none;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
 }
 
-.segment-card:not(:last-child) {
-    border-right: 1px solid #e5e9ed;
+.segments .vertical-card:hover {
+  transform: translateY(-6px);
+  border-color: #cbd3da;
+  box-shadow: 0 12px 30px rgba(18, 30, 45, 0.12);
 }
 
-.segment-card img {
-    width: 72px;
-    height: 72px;
-    object-fit: contain;
-    display: block;
-    margin-bottom: 20px;
+.segments .vertical-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background-color: #e9edf1;
 }
 
-.segment-card h3 {
-    margin: 0;
-    color: #102033;
-    font-size: 14px;
-    line-height: 1.4;
-    font-weight: 600;
+.segments .vertical-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.segments .vertical-card:hover .vertical-image img {
+  transform: scale(1.06);
+}
+
+.segments .vertical-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(18, 30, 45, 0) 50%,
+    rgba(18, 30, 45, 0.25) 100%
+  );
+  pointer-events: none;
+}
+
+.segments .vertical-content {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 90px !important;
+  height: auto !important;
+  padding: 14px;
+  display: block;
+  flex: 0 0 auto;
+}
+
+.segments .vertical-content h3 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  color: #121e2d;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: left !important;
 }
 
 /* =========================================================
