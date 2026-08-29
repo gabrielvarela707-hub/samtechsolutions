@@ -1182,12 +1182,12 @@ body {
   font-size: 15px;
 }
 .solucao {
-    scroll-margin-top: 110px;
+  scroll-margin-top: 110px;
 }
 .solucao:target {
-    outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline: 2px solid rgba(255, 255, 255, 0.5);
 
-    outline-offset: -2px;
+  outline-offset: -2px;
 }
 /* =========================================================
    FIM DA PÁGINA — SOLUÇÕES
@@ -1561,38 +1561,36 @@ body {
 }
 
 /* CONTEÚDO */
-/* CONTEÚDO */
 .segments .vertical-content {
-    width: 100%;
-    box-sizing: border-box;
+  width: 100%;
+  box-sizing: border-box;
 
-    min-height: 0 !important;
-    height: auto !important;
+  min-height: 90px !important;
+  height: auto !important;
 
-    padding: 14px;
+  padding: 14px;
 
-    display: block;
+  display: block;
 
-    flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 /* NOME DO SEGMENTO */
 .segments .vertical-content h3 {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 
-    margin: 0;
+  margin: 0;
 
-    color: #121e2d;
+  color: #121e2d;
 
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1.35;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
 
-    text-align: left !important;
+  text-align: left !important;
 }
-
 
 /* =========================================================
    CONTATO / CTA
