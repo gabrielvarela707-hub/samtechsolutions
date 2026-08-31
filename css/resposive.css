@@ -147,16 +147,16 @@
 
 @media (max-width: 992px) {
 
-   .site-control__inner {
+    .site-control__inner {
         position: relative;
     }
-  
-  .menu-hamburguer {
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-}
+
+    .menu-hamburguer {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
 
     .site-control__inline-links {
         display: none;
@@ -167,10 +167,10 @@
     }
 
     .nav-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-}
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
 
     .quem-somos {
         grid-template-columns: 1fr;
@@ -206,11 +206,6 @@
         height: 270px;
     }
 }
-
-
-
-
-
 
 /* =========================================================
    RESPONSIVO DO VERTICAIS
