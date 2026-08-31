@@ -140,58 +140,69 @@
 /* =========================================================
    RESPONSIVO DO QUEM SOMOS E CONHEÇA O TIME
    ========================================================= */
+.menu-hamburguer {
+    display: none;
+}
 
 @media (max-width: 992px) {
-  .quem-somos {
-    grid-template-columns: 1fr;
-    padding: 40px 20px 20px 20px;
-    gap: 20px;
-  }
 
-  /* OCULTA AS IMAGENS DO QUEM SOMOS NO RESPONSIVO */
-  .quem-somos > img {
-    display: none;
-  }
+    .menu-hamburguer {
+        display: block;
+    }
 
-  .sobre,
-  .missao-valores {
-    padding: 30px;
-  }
+    .site-control__inline-links {
+        display: none;
+    }
 
-  .nosso-time {
-    padding: 0 20px;
-    margin: 20px auto 40px auto;
-  }
+    .site-control__inline-links.ativo {
+        display: block;
+    }
 
-  .membro-card {
+    .nav-menu {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 30px;
-    gap: 25px;
-  }
-
-  .membro-foto {
-    width: 220px;
-    height: 270px;
-  }
+    gap: 0;
 }
 
-@media (max-width: 576px) {
-  .sobre h1,
-  .missao-valores h2 {
-    font-size: 26px;
-  }
+    .quem-somos {
+        grid-template-columns: 1fr;
+        padding: 40px 20px 20px 20px;
+        gap: 20px;
+    }
 
-  .nosso-time > h2 {
-    font-size: 28px;
-    margin-bottom: 30px;
-  }
+    /* OCULTA AS IMAGENS DO QUEM SOMOS NO RESPONSIVO */
+    .quem-somos > img {
+        display: none;
+    }
 
-  .membro-info h3 {
-    font-size: 22px;
-  }
+    .sobre,
+    .missao-valores {
+        padding: 30px;
+    }
+
+    .nosso-time {
+        padding: 0 20px;
+        margin: 20px auto 40px auto;
+    }
+
+    .membro-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+        gap: 25px;
+    }
+
+    .membro-foto {
+        width: 220px;
+        height: 270px;
+    }
 }
+
+
+
+
+
 
 /* =========================================================
    RESPONSIVO DO VERTICAIS

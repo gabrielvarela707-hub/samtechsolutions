@@ -1,5 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+    /* =========================================================
+       MENU HAMBÚRGUER
+       ========================================================= */
+
+    const menuHamburguer = document.querySelector(".menu-hamburguer");
+    const menu = document.querySelector(".site-control__inline-links");
+
+    if (menuHamburguer && menu) {
+
+        menuHamburguer.addEventListener("click", () => {
+
+            menu.classList.toggle("ativo");
+
+        });
+
+    }
+
+
+    /* =========================================================
+       CARROSSEL
+       ========================================================= */
+
     const viewport = document.querySelector(".clients-viewport");
     const track = document.querySelector(".clients-track");
 
