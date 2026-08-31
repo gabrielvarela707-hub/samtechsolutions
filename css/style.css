@@ -218,6 +218,16 @@ body {
 
     background-color: #121e2d;
     color: #ffffff;
+
+    background-image:
+        linear-gradient(
+            rgba(18, 30, 45, 0.72),
+            rgba(18, 30, 45, 0.72)
+        ),
+        url("../assets/solucoes/banner-cidade.jpg");
+
+        background-size: cover;
+        background-position: center;
 }
 
 .contact-hero .contact-container {
@@ -1729,8 +1739,8 @@ body {
     align-items: center;
 
     background-image:
-        url("../assets/home/verticais-home.jpg");
-
+        url("../assets/solucoes/banner-cidade.jpg");
+    
     background-size: cover;
     background-position: center;
 
