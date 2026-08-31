@@ -142,7 +142,6 @@
     color: #ffffff;
 }
 
-
 /* =========================================================
    REDES SOCIAIS
    ========================================================= */
@@ -150,45 +149,51 @@
 .footer-social {
     display: flex;
     align-items: center;
-
-    gap: 12px;
-
-    margin-top: 24px;
+    margin-top: 28px;
 }
 
 
-.footer-social a {
-    width: 38px;
-    height: 38px;
+/* =========================================================
+   LINKEDIN
+   ========================================================= */
+
+.linkedin-link {
+    width: 40px;
+    height: 40px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    border: 1px solid #3a4858;
-    border-radius: 50%;
+    color: #ffffff;
 
-    color: #b0bec5;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
 
     text-decoration: none;
 
-    font-size: 14px;
-    font-weight: 600;
-
-    transition:
-        color 0.3s ease,
+    transition: 
         background-color 0.3s ease,
         border-color 0.3s ease,
         transform 0.3s ease;
 }
 
 
-.footer-social a:hover {
+/* Ícone oficial */
+
+.linkedin-link i {
+    font-size: 19px;
+    line-height: 1;
+}
+
+
+/* Hover */
+
+.linkedin-link:hover {
+    background-color: #0077b5;
+    border-color: #0077b5;
+
     color: #ffffff;
-
-    background-color: #1e2d40;
-
-    border-color: #ffffff;
 
     transform: translateY(-2px);
 }
