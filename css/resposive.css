@@ -146,9 +146,16 @@
 
 @media (max-width: 992px) {
 
-    .menu-hamburguer {
-        display: block;
+    .site-control__inner {
+        position: relative;
     }
+  
+  .menu-hamburguer {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
 
     .site-control__inline-links {
         display: none;
