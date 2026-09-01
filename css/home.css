@@ -1471,6 +1471,38 @@
     }
 
 }
+.menu-hamburguer {
+    display: none;
+}
+
+@media (max-width: 992px) {
+
+    .site-control__inner {
+        position: relative;
+    }
+
+    .menu-hamburguer {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .site-control__inline-links {
+        display: none;
+    }
+
+    .site-control__inline-links.ativo {
+        display: block;
+    }
+    
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+}
 
 
 
